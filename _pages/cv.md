@@ -16,6 +16,8 @@ Education
 * **MSc in Digital Media Technology**, Nanyang Technological University, Singapore, 2017
 * **B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
 
+***
+
 Employment
 ======
 * June 2015 - Now: **Assistant Engineer**
@@ -29,11 +31,14 @@ Employment
     * 3D city visualization based on LiDAR data.
     * GUI designing and implementation for an energy research project.
   
+***
 
 Social Responsibilites
 ======
 * Referee
   * National Undergraduate Engineering Practice and Innovation Ability Competition (Beijing, China, 2021)
+
+***
 
 Skills
 ======
