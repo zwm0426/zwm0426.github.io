@@ -48,7 +48,7 @@ Skills
   * Python
   * MATLAB
   * C/C++
-  * \\ \LaTeX{} \\
+  * $ \LaTeX{} $
   * Java
  
 * Skill 3
