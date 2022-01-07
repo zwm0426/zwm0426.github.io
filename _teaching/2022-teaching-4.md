@@ -1,8 +1,8 @@
 ---
 title: "2020"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2020-teaching-2
+type: "Undergraduate course"
+permalink: /teaching/2022-teaching-4
 venue: "Shanghai Jiao Tong University, China"
 date: 2020-01-01
 location: "China"

@@ -1,8 +1,8 @@
 ---
 title: "2021"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2020-teaching-2
+type: "Undergraduate course"
+permalink: /teaching/2021-teaching-3
 venue: "Shanghai Jiao Tong University, China"
 date: 2021-01-01
 location: "China"
