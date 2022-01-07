@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-* ![NTU-LOGO](/images/ntu-logo.png)**MSc in Digital Media Technology**, Nanyang Technological University, Singapore, 2017
+* ![NTU-LOGO](/images/ntu-logo.png){:width="200px"}**MSc in Digital Media Technology**, Nanyang Technological University, Singapore, 2017
 * ![NWU-LOGO](/images/nwu-logo.png =100)**B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
 
 ***
