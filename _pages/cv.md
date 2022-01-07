@@ -11,32 +11,47 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* MSc in Digital Media Technology, Nanyang Technological University, Singapore, 2017
+* B.S. in Computer Science and Technology, Northwest University, Xi’an, China, 2016
 
-Work experience
+Employment
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* June 2015 - Now: Assistant Engineer
+  * Student Innovation Center, Shanghai Jiao Tong University, Shanghai, China
+    * Course Development and Lecturing.
+    * Student Management.
+    * Competitions Management.
+    * Enterprise Collaboration.
+    * Laboratories & Devices Management.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Mov 2017 - June 2018: Research Associate
+  * Energy Research Institute @ NTU, Singapore
+    * 3D City Visualization based on LiDAR data.
+    * GUI Designing and Implementation for an Energy Research Project.
   
+
+Social Responsibilites
+======
+* Referee
+  * National Undergraduate Engineering Practice and Innovation Ability Competition (Beijing, China, 2021)
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
+* Languages: 
+  * Chinese Mandarin (Native)
+  * English (CEFR C1, IELTS 7.0)
+  * Korean, Janpanese, Germany (very basic)
+
+* Programming Languages: 
+  * Python
+  * MATLAB
+  * C/C++
+  * $$ \Latex{} $$
+  * Java
+ 
 * Skill 3
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -56,4 +71,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
