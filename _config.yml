@@ -87,9 +87,9 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "weiming.zhao[at]sjtu.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://space.bilibili.com/2243922"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          :"https://space.bilibili.com/2243922"
   wikipedia        :
   #bilibili         :"https://space.bilibili.com/2243922"
 
