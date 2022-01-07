@@ -43,9 +43,9 @@ Social Responsibilites
 Skills
 ======
 * Languages: 
-  * Chinese Mandarin (Native)
-  * English (CEFR C1, IELTS 7.0)
-  * Korean, Janpanese, Germany (very basic)
+  * 🇨🇳 Chinese Mandarin (Native)
+  * 🇬🇧 English (CEFR C1, IELTS 7.0)
+  * 🇰🇷 Korean, 🇯🇵 Janpanese, 🇩🇪 Germany (very basic)
 
 * Programming Languages: 
   * Python
