@@ -1,7 +1,8 @@
 ---
-title: "Undergraduate course"
+title: "Teaching"
 collection: teaching
-permalink: /teaching/2019-teaching-1
+type: "Undergraduate course"
+permalink: /teaching/teaching-all
 venue: "Shanghai Jiao Tong University, China"
 date: 2019-06-01
 location: "China"
