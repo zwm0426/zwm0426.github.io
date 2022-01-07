@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant engineer in [Student Innovation Center of Shanghai Jiao Tong Universty] (https://www.si.sjtu.edu.cn), China. Now working on teaching and innovation in IT FabLab.
+I am an assistant engineer in [Student Innovation Center of Shanghai Jiao Tong Universty](https://www.si.sjtu.edu.cn), China. Now working on teaching and innovation in IT FabLab.
 
 Before SJTU, I worked on the ~ in ERIAN, Singapore. Did something.
 
