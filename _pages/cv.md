@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,14 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
+[Download the PDF Version](/files/CV_Weiming_Zhao.pdf)
+
 Education
 ======
-* MSc in Digital Media Technology, Nanyang Technological University, Singapore, 2017
-* B.S. in Computer Science and Technology, Northwest University, Xi’an, China, 2016
+* **MSc in Digital Media Technology**, Nanyang Technological University, Singapore, 2017
+* **B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
 
 Employment
 ======
-* June 2015 - Now: Assistant Engineer
+* June 2015 - Now: **Assistant Engineer**
   * Student Innovation Center, Shanghai Jiao Tong University, Shanghai, China
     * Course Development and Lecturing.
     * Student Management.
@@ -24,7 +26,7 @@ Employment
     * Enterprise Collaboration.
     * Laboratories & Devices Management.
 
-* Mov 2017 - June 2018: Research Associate
+* Mov 2017 - June 2018: **Research Associate**
   * Energy Research Institute @ NTU, Singapore
     * 3D City Visualization based on LiDAR data.
     * GUI Designing and Implementation for an Energy Research Project.
@@ -46,7 +48,7 @@ Skills
   * Python
   * MATLAB
   * C/C++
-  * $$ \Latex{} $$
+  * \\ \LaTeX{} \\
   * Java
  
 * Skill 3
