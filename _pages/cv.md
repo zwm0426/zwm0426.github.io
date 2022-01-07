@@ -51,7 +51,12 @@ Skills
   * $ \LaTeX{} $
   * Java
  
-* Skill 3
+* Others:
+  * Video editing
+  * Music
+  * Running
+  * Baseball
+  * Swimming
 
 <!-- Publications
 ======
