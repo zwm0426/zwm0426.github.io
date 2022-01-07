@@ -12,7 +12,7 @@ I am an assistant engineer in [Student Innovation Center of Shanghai Jiao Tong U
 
 Before SJTU, I worked on the ~ in ERIAN, Singapore. Did something.
 
-![](/images/under_construction.png)
+![](/images/under_construction.png){:width="220 px"}
 
 
 <!-- Another Block 
