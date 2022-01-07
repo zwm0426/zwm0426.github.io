@@ -89,7 +89,7 @@ author:
   googlescholar    : 
   email            : "weiming.zhao[at]sjtu.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://space.bilibili.com/2243922"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :"https://space.bilibili.com/2243922"
+  youtube          :
   wikipedia        :
   #bilibili         :"https://space.bilibili.com/2243922"
 
