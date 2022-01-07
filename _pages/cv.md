@@ -20,16 +20,14 @@ Employment
 ======
 * June 2015 - Now: **Assistant Engineer**
   * Student Innovation Center, Shanghai Jiao Tong University, Shanghai, China
-    * Course Development and Lecturing.
-    * Student Management.
-    * Competitions Management.
-    * Enterprise Collaboration.
-    * Laboratories & Devices Management.
+    * Course development and lecturing.
+    * Students, competitions, laboratories & devices management.
+    * Enterprise collaboration.
 
 * Mov 2017 - June 2018: **Research Associate**
   * Energy Research Institute @ NTU, Singapore
-    * 3D City Visualization based on LiDAR data.
-    * GUI Designing and Implementation for an Energy Research Project.
+    * 3D city visualization based on LiDAR data.
+    * GUI designing and implementation for an energy research project.
   
 
 Social Responsibilites
