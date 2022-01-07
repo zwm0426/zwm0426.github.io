@@ -27,7 +27,7 @@ Employment
     * Enterprise collaboration.
 
 * Nov 2017 - June 2018: **Research Associate**
-  * ![NTU-LOGO](/images/ntu-logo.png) {:width="100px"}  Energy Research Institute @ NTU, Singapore
+  * ![NTU-LOGO](/images/ntu-logo.png){:width="100px"}  Energy Research Institute @ NTU, Singapore
     * 3D city visualization based on LiDAR data.
     * GUI designing and implementation for an energy research project.
   
