@@ -80,10 +80,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kevin ZHAO Weiming \n 赵伟明"
+  name             : "Kevin ZHAO Weiming <br> 赵伟明"
   avatar           : "profile.jpg"
-  bio              : "Assistant Engineer, IT FabLab \nStudent Innovation Center\nShanghai Jiao Tong University"
-  location         : "Shanghai, China"
+  bio              : "Assistant Engineer, IT FabLab <br>Student Innovation Center<br>Shanghai Jiao Tong University"
+  location         : "#800 Dongchuan Road, Minhang District, <br>Shanghai, China"
   employer         :
   pubmed           : 
   googlescholar    : 
