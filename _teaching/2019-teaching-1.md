@@ -7,6 +7,8 @@ venue: "Shanghai Jiao Tong University, China"
 date: 2019-06-01
 location: "China"
 ---
+![In teaching](/images/teaching.jpg)
+
 ## 2019 Fall 
 SI1210 - *Engineer Practicing*: Module of NI LabVIEW;
 ## 2019 Summer
