@@ -1,5 +1,5 @@
 ---
-title: "Teaching"
+title: "Undergraduate course"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/teaching-all/
@@ -8,7 +8,7 @@ date: 2019-06-01
 location: "China"
 ---
 
-![In teaching](/images/teaching.jpg)
+![In classroom](/images/teaching.jpg)
 
 ## 2022 Spring
 CS085 - *VR/AR Design and Development Practice* (Coming soon...)
