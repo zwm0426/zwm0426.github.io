@@ -14,7 +14,14 @@ redirect_from:
 Education
 ======
 * ![NTU-LOGO](/images/ntu-logo.png){:width="100px"}  **MSc in Digital Media Technology**, Nanyang Technological University, Singapore, 2017
+  * GPA: 4.19 / 5.00
+  * Dissertation: *Generating Bounding-Box Annotations For Large-Scale Image Dataset*
+  * Supervised by [Prof. Jianfei CAI](https://jianfei-cai.github.io) 
 * ![NWU-LOGO](/images/nwu-logo.png){:width="100px"}  **B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
+  * GPA: 3.35 / 4.00
+  * FYP: *Image Re-Coloring and Enhancement for Color Blinds*
+  * Supervised by [Assoc.Prof. Qirong BO](https://faculty.nwu.edu.cn/QirongBu/zh_CN/index.htm)
+
 
 ***
 
