@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant engineer working in [Student Innovation Center of Shanghai Jiao Tong Universty](https://www.si.sjtu.edu.cn), China. My responsibility is developing brand-new courses, giving lecture to students, collabrating with cooperations, and instruct our students in competations.
-
-Giving lectures of MATLAB, OpenCV, Unity3D, and Python progamming to students across the whole SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/teaching-ug-1/)
+I am an assistant engineer working in [Student Innovation Center of Shanghai Jiao Tong Universty](https://www.si.sjtu.edu.cn), China. My responsibility is developing brand-new courses, giving lecture to students, collabrating with cooperations, and instruct our students in competations. Giving lectures of MATLAB, OpenCV, Unity3D, and Python progamming to students across the whole SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/teaching-ug-1/)
 
 Before I entered SJTU, I worked on the 3D LiDAR data and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
 
