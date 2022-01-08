@@ -22,7 +22,6 @@ Education
   * FYP: *Image Re-Coloring and Enhancement for Color Blinds*
   * Supervised by [Assoc Prof. Qirong BO](https://faculty.nwu.edu.cn/QirongBu/zh_CN/index.htm)
 
-
 ***
 
 Employment
@@ -37,6 +36,7 @@ Employment
   * ![NTU-LOGO](/images/ntu-logo.png){:width="100px"}  Energy Research Institute @ NTU, Singapore
     * 3D city visualization based on LiDAR data.
     * GUI designing and implementation for an energy research project.
+
 ***
 
 Honor
