@@ -55,12 +55,9 @@ Skills
   * Java
  
 * Others:
-  * Video editing
-  * Photography
-  * Music
-  * Running
-  * Baseball
-  * Swimming
+  * 📹 Video editing  📷 Photography  🎶 Music
+  * 🌴 Travel  🚅 Railways  🛩 Aeroplanes  📺 Televison Culture 
+  * 🏃 Running  🥎 Baseball  🏊 Swimming
 
 <!-- Publications
 ======
