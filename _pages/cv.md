@@ -20,7 +20,7 @@ Education
 
 Employment
 ======
-* June 2015 - Now: **Assistant Engineer**
+* June 2019 - Now: **Assistant Engineer**
   * ![SJTU-LOGO](/images/sjtu-logo.png){:width="100px"}  Student Innovation Center, Shanghai Jiao Tong University, Shanghai, China
     * Course development and lecturing.
     * Students, competitions, laboratories & devices management.
