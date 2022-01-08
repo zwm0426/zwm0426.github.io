@@ -37,17 +37,25 @@ Employment
   * ![NTU-LOGO](/images/ntu-logo.png){:width="100px"}  Energy Research Institute @ NTU, Singapore
     * 3D city visualization based on LiDAR data.
     * GUI designing and implementation for an energy research project.
-  
 ***
 
-Social Responsibilites
+Honor
+======
+* **Excellent Staff**
+  * Shanghai Jiao Tong University Annual Assessment, China (Apr 2020)
+* **Grand Prize**
+  * The Second National University Hybrid Teaching Designing and Innovation Competition (Dec 2020)
+
+***
+
+Social Responsibility
 ======
 * Referee
   * National Undergraduate Engineering Practice and Innovation Ability Competition (Beijing, China, 2021)
 
 ***
 
-Skills
+Skill
 ======
 * Languages: 
   * Native: 🇨🇳 Chinese Mandarin 
