@@ -43,9 +43,9 @@ Social Responsibilites
 Skills
 ======
 * Languages: 
-  * 🇨🇳 Chinese Mandarin (Native)
-  * 🇬🇧 English (CEFR C1, IELTS 7.0)
-  * 🇰🇷 Korean, 🇯🇵 Janpanese, 🇩🇪 Germany (very basic)
+  * Native: 🇨🇳 Chinese Mandarin 
+  * Pro: 🇬🇧 English (CEFR C1, IELTS 7.0)
+  * Very basic: 🇰🇷 Korean, 🇯🇵 Janpanese, 🇩🇪 Germany, 🇷🇺 Russian
 
 * Programming Languages: 
   * Python
@@ -56,6 +56,7 @@ Skills
  
 * Others:
   * Video editing
+  * Photography
   * Music
   * Running
   * Baseball
