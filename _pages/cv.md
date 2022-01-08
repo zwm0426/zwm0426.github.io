@@ -20,7 +20,7 @@ Education
 * ![NWU-LOGO](/images/nwu-logo.png){:width="100px"}  **B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
   * GPA: 3.35 / 4.00
   * FYP: *Image Re-Coloring and Enhancement for Color Blinds*
-  * Supervised by [Assoc.Prof. Qirong BO](https://faculty.nwu.edu.cn/QirongBu/zh_CN/index.htm)
+  * Supervised by [Assoc Prof. Qirong BO](https://faculty.nwu.edu.cn/QirongBu/zh_CN/index.htm)
 
 
 ***
