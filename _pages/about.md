@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant engineer working in [Student Innovation Center of Shanghai Jiao Tong Universty](https://www.si.sjtu.edu.cn), China. My responsibility is developing brand-new courses, giving lecture to students, collabrating with cooperations, and instruct our students in competations. Giving lectures of MATLAB, OpenCV, Unity3D, and Python progamming to students across the whole SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/teaching-ug-1/)
+I am an assistant engineer working in [Student Innovation Center of Shanghai Jiao Tong Universty](https://www.si.sjtu.edu.cn), China. My responsibility is to develop brand-new courses, give lectures to students, collaborate with cooperations, and instruct our students in competitions. Giving MATLAB, OpenCV, Unity3D, and Python programming courses to students across SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/teaching-ug-1/)
 
-Before I entered SJTU, I worked on the 3D LiDAR data and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
+Before entering SJTU, I worked on the 3D LiDAR data and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
 
-I gained my Master of Scince in Digital Media Technology in year of 2017 from Nanyang Technological University. And gained my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China in 2016. You can see through [my CV web page for more details.](https://zwm0426.github.io/cv/)
+I gained my Master of Science in Digital Media Technology in 2017 from Nanyang Technological University, Singapore. And I obtained my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China, in 2016. You can see through [my CV web page for more details.](https://zwm0426.github.io/cv/)
 
-My research is mainly focus on computer-human interaction (HCI), user interface (UI)design, VR/AR applications, and courses design.
+My research mainly focuses on computer-human interaction (HCI), user interface (UI) design, VR/AR applications, and courses design.
 
 
 
