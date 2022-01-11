@@ -60,7 +60,7 @@ Skill
 * Languages: 
   * Native: 🇨🇳 Chinese Mandarin 
   * Pro: 🇬🇧 English (CEFR C1, IELTS 7.0)
-  * Very basic: 🇭🇰 Chinese Cantonese, 🇰🇷 Korean, 🇯🇵 Janpanese, 🇩🇪 Germany, 🇷🇺 Russian
+  * Very basic: 🇭🇰 Chinese Cantonese, 🇰🇷 Korean, 🇯🇵 Japanese, 🇩🇪 Germany, 🇷🇺 Russian
 
 * Programming Languages: 
   * Python
