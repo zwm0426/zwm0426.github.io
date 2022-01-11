@@ -9,7 +9,6 @@ paperurl:
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 Chinese Patent Number: CN110196031B
-
 [Google Patent web page(English)](https://patents.google.com/patent/CN110196031B/en)
 [Download full version here (Chinese)](http://zwm0426.github.io/files/CN110196031B.pdf)
 
