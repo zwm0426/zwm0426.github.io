@@ -8,8 +8,7 @@ venue: 'Contemporary Education Research and Teaching Practice'
 # paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 # citation: 'Weiming Zhao, Wankun Xue. Course Design of "The Basic MATLAB Practice" for Non-Computer-Science Students, Contemporary Education Research and Teaching Practice 2021.09: 38-39'
 ---
-This paper is about ~.
 
-[Download paper here (Chinese)](http://academicpages.github.io/files/paper2.pdf)
+[Download full paper here (Chinese)](http://zwm0426.github.io/files/针对非计算机专业学生的《MATLAB实践》课程设计.pdf)
 
 Recommended citation: **Weiming Zhao**, Wankun Xue. Course Design of “The Basic MATLAB Practice” for Non-Computer Students, *Contemporary Education Research and Teaching Practice* 2021.09: 38-39

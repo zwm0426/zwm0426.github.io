@@ -8,8 +8,7 @@ venue: 'Contemporary Education Research and Teaching Practice'
 # paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 #citation: 'Wankun Xue, Weiming Zhao. Intelligent Interaction Course Construction facing Non-Programming-Foundation Students Based on Raspberry Pi, Contemporary Education Research and Teaching Practice 2021.09: 255-256'
 ---
-This paper is about the number 3. The number 4 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
+[Download paper here](http://zwm0426.github.io/files/基于树莓派的面向无编程基础学生的智能交互实践性课程建设.pdf)
 
 Recommended citation: Wankun Xue, **Weiming Zhao**. Intelligent Interaction Course Construction facing Non-Programming Students Based on Raspberry Pi, *Contemporary Education Research and Teaching Practice* 2021.09: 255-256
