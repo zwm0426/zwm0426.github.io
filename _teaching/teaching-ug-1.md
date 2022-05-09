@@ -12,6 +12,8 @@ location: "China"
 
 ## 2022 Spring
 CS085 - *VR/AR Design and Development Practice* 
+SI1210 - *Engineer Practicing*: Module of MATLAB;
+SI1210 - *Engineer Practicing*: Module of NI LabVIEW;
 
 ## 2021 Fall
 CS085 - *VR/AR Design and Development Practice*
