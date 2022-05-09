@@ -11,7 +11,7 @@ location: "China"
 ![In classroom](/images/teaching.jpg)
 
 ## 2022 Spring
-CS085 - *VR/AR Design and Development Practice* (Coming soon...)
+CS085 - *VR/AR Design and Development Practice* 
 
 ## 2021 Fall
 CS085 - *VR/AR Design and Development Practice*
