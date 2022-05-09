@@ -26,7 +26,7 @@ Education
 
 Employment
 ======
-* June 2019 - Now: **Assistant Engineer**
+* June 2019 - Now: **Engineer**
   * ![SJTU-LOGO](/images/sjtu-logo.png){:width="100px"}  Student Innovation Center, Shanghai Jiao Tong University, Shanghai, China
     * Course development and lecturing.
     * Students, competitions, laboratories & devices management.
@@ -60,7 +60,7 @@ Skill
 * Languages: 
   * Native: 🇨🇳 Chinese Mandarin 
   * Pro: 🇬🇧 English (CEFR C1, IELTS 7.0)
-  * Very basic: 🇭🇰 Chinese Cantonese, 🇰🇷 Korean, 🇯🇵 Japanese, 🇩🇪 Germany, 🇷🇺 Russian
+  * Very basic: 🇭🇰 Chinese Cantonese, 🇰🇷 Korean, 🇯🇵 Japanese, 🇩🇪 Germany, 🇫🇷 French, 🇷🇺 Russian
 
 * Programming Languages: 
   * Python
