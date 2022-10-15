@@ -50,8 +50,12 @@ Honor
 
 Social Responsibility
 ======
+* Deputy Secretary-General
+  * Northwest University, China, Shanghai Alumni Network Information Branch (Shanghai, China, September 2022)
+
 * Referee
-  * National Undergraduate Engineering Practice and Innovation Ability Competition (Beijing, China, 2021)
+  * National Undergraduate Engineering Practice and Innovation Ability Competition (Beijing, China, September 2021)
+
 
 ***
 

@@ -10,7 +10,8 @@ location: "China"
 
 ![In classroom](/images/teaching.jpg)
 ## 2022 Fall
-Coming soon...
+SI1210 - *Engineer Practicing*: Module of MATLAB <br>
+CS175 - *Developing Android Applications*: Introduction to Java Programming Language
 
 
 ## 2022 Spring
