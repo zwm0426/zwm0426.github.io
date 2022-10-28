@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download the PDF Version](/files/CV_Weiming_Zhao.pdf)
+[PDF](/files/CV_Weiming_Zhao.pdf)
 
 Education
 ======
