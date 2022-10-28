@@ -9,6 +9,6 @@ venue: 'Drive System Technique'
 # citation: 'Weiming Zhao, Wankun Xue. Course Design of "The Basic MATLAB Practice" for Non-Computer-Science Students, Contemporary Education Research and Teaching Practice 2021.09: 38-39'
 ---
 
-[Download full paper here (Chinese)](http://zwm0426.github.io/files/基于华为云ModelArts及HiLens自动驾驶实验平台的设计.pdf)
+[PDF (Chinese)](http://zwm0426.github.io/files/基于华为云ModelArts及HiLens自动驾驶实验平台的设计.pdf)
 
 Recommended citation: Pengzhi Chu, Bo Xu, Xiongziyan Xiao, **Weiming Zhao**, Wankun Xue. The Design of Autonomous Driving Exprimental Platform Based on the Huawei Cloud Model Arts and HiLens, *Drive System Technique* 2022.06: 38-39

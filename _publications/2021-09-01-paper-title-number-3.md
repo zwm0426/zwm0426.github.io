@@ -9,6 +9,6 @@ venue: 'Contemporary Education Research and Teaching Practice'
 #citation: 'Wankun Xue, Weiming Zhao. Intelligent Interaction Course Construction facing Non-Programming-Foundation Students Based on Raspberry Pi, Contemporary Education Research and Teaching Practice 2021.09: 255-256'
 ---
 
-[Download full paper here (Chinese)](http://zwm0426.github.io/files/基于树莓派的面向无编程基础学生的智能交互实践性课程建设.pdf)
+[PDF (Chinese)](http://zwm0426.github.io/files/基于树莓派的面向无编程基础学生的智能交互实践性课程建设.pdf)
 
 Recommended citation: Wankun Xue, **Weiming Zhao**. Intelligent Interaction Course Construction facing Non-Programming Students Based on Raspberry Pi, *Contemporary Education Research and Teaching Practice* 2021.09: 255-256
