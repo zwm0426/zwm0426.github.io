@@ -9,10 +9,12 @@ location: "China"
 ---
 
 ![In classroom](/images/teaching.jpg)
+## 2023 Spring
+CS1107 - *VR/AR Design and Development Practice* <br>
+
 ## 2022 Fall
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 CS175 - *Developing Android Applications*: Introduction to Java Programming Language
-
 
 ## 2022 Spring
 CS085 - *VR/AR Design and Development Practice* <br>
