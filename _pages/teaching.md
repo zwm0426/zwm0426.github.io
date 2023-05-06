@@ -9,7 +9,8 @@ redirect_from:
 
 ![In classroom](/images/teaching.jpg)
 
-## Undergraduate courses, Shanghai Jiao Tong University, China
+## Undergraduate courses
+### Shanghai Jiao Tong University, China
 
 ## 2023 Fall (coming soon)
 CS1108 - *Introduction to Data Science - The Way of Python* <br>
