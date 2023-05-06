@@ -9,6 +9,13 @@ location: "China"
 ---
 
 ![In classroom](/images/teaching.jpg)
+## 2023 Fall (coming soon)
+CS1108 - *Introduction to Data Science - The Way of Python* <br>
+SI1210 - *Engineer Practicing*: Module of MATLAB <br>
+
+## 2023 Summer (coming soon)
+SI1210 - *Engineer Practicing*: Module of MATLAB <br>
+
 ## 2023 Spring
 CS1107 - *VR/AR Design and Development Practice* <br>
 
