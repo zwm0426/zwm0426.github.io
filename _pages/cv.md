@@ -19,7 +19,7 @@ Education
   * Supervised by [Prof. Jianfei CAI](https://jianfei-cai.github.io) 
 * ![NWU-LOGO](/images/nwu-logo.png){:width="100px"}  **B.S. in Computer Science and Technology**, Northwest University, Xi’an, China, 2016
   * GPA: 3.35 / 4.00
-  * FYP: *Image Re-Coloring and Enhancement for Color Blinds*
+  * FYP: *Image Re-Coloring and Enhancement for Color Blindness*
   * Supervised by [Assoc Prof. Qirong BO](https://faculty.nwu.edu.cn/QirongBu/zh_CN/index.htm)
 
 ***
@@ -44,7 +44,7 @@ Honor
 * **Excellent Staff**
   * Shanghai Jiao Tong University Annual Assessment, China (Apr 2020)
 * **Grand Prize**
-  * The Second National University Hybrid Teaching Designing and Innovation Competition (Dec 2020)
+  * The Second National University Blended Learning Designing and Innovation Competition (Dec 2020)
 
 ***
 
