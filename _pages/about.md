@@ -10,7 +10,7 @@ redirect_from:
 
 I am an engineer working in [Student Innovation Center of Shanghai Jiao Tong University](https://www.si.sjtu.edu.cn), China. My responsibility is to develop brand-new courses, give lectures to students, collaborate with cooperations, and instruct our students in competitions. Giving MATLAB, OpenCV, Unity3D, and Python programming courses to students across SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/)
 
-Before entering SJTU, I worked on the 3D LiDAR data and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
+Before entering SJTU, I worked on the 3D LiDAR point cloud data visaulization and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
 
 I gained my Master of Science in Digital Media Technology in 2017 from Nanyang Technological University, Singapore. And I obtained my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China, in 2016. You can see through [my CV web page for more details.](https://zwm0426.github.io/cv/)
 
