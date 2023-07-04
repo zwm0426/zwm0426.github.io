@@ -16,7 +16,7 @@ redirect_from:
 CS1108 - *Introduction to Data Science - The Way of Python* <br>
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
-## 2023 Summer (coming soon)
+## 2023 Summer 
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
 ## 2023 Spring
