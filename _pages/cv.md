@@ -76,7 +76,7 @@ Skill
 * Others:
   * 📹 Video editing  📷 Photography  🎶 Music
   * 🌴 Travel  🚅 Railways  🛩 Aeroplanes  📺 Televison Culture 
-  * 🏃 Running  🥎 Baseball  🏊 Swimming
+  * 🚴 Cycling 🏃 Running  🥎 Baseball  🏊 Swimming
 
 <!-- Publications
 ======

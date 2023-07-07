@@ -14,6 +14,7 @@ redirect_from:
 
 ## 2023 Fall (coming soon)
 CS1108 - *Introduction to Data Science - The Way of Python* <br>
+CS1107 - *VR/AR Design and Development Practice* <br>
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
 ## 2023 Summer 
