@@ -12,7 +12,7 @@ redirect_from:
 ## Undergraduate courses
 ### Shanghai Jiao Tong University, China
 
-## 2023 Fall (coming soon)
+## 2023 Fall 
 CS1108 - *Introduction to Data Science - The Way of Python* <br>
 CS1107 - *VR/AR Design and Development Practice* <br>
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
