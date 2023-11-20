@@ -41,6 +41,8 @@ Employment
 
 Honor
 ======
+* **Intelligence Base - Huawei Cloud and Computation Pioneer Teacher**
+  * Huawei Incropration Cloud and Computation Business Group, China (2021)
 * **Excellent Staff**
   * Shanghai Jiao Tong University Annual Assessment, China (Apr 2020)
 * **Grand Prize**
@@ -75,8 +77,14 @@ Skill
  
 * Others:
   * 📹 Video editing  📷 Photography  🎶 Music
+  * 🌴 Travel  📺 Televison Culture 
+  * 🚴 Cycling 🥎 Baseball  
+
+<!--
+  * Others:
+  * 📹 Video editing  📷 Photography  🎶 Music
   * 🌴 Travel  🚅 Railways  🛩 Aeroplanes  📺 Televison Culture 
-  * 🚴 Cycling 🏃 Running  🥎 Baseball  🏊 Swimming
+  * 🚴 Cycling 🏃 Running  🥎 Baseball  🏊 Swimming -->
 
 <!-- Publications
 ======
