@@ -9,8 +9,8 @@ redirect_from:
 
 ![In classroom](/images/teaching.jpg)
 
-## Undergraduate courses
-### Shanghai Jiao Tong University, China
+<!--## Undergraduate courses-->
+## Shanghai Jiao Tong University, China
 
 ## 2024 Spring  *Coming soon...*
 CS1107 - *VR/AR Design and Development Practice* <br>
