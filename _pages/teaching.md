@@ -12,6 +12,9 @@ redirect_from:
 ## Undergraduate courses
 ### Shanghai Jiao Tong University, China
 
+## 2024 Spring (Coming soon...)
+CS1107 - *VR/AR Design and Development Practice* <br>
+
 ## 2023 Fall 
 CS1108 - *Introduction to Data Science - The Way of Python* <br>
 CS1107 - *VR/AR Design and Development Practice* <br>

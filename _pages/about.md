@@ -16,7 +16,7 @@ I gained my Master of Science in Digital Media Technology in 2017 from Nanyang T
 
 My research mainly focuses on computer-human interaction (HCI), user interface (UI) design, VR/AR applications, and courses design.
 
-
+![NEW](/images/new.png) Since December 2023, I have also taken on the role of head of the SJTU AIGC Class, where I am responsible for managing and guiding the learning and development of the class.
 
 
 <!-- ![](/images/under_construction.png){:width="220 px"} -->
