@@ -12,7 +12,7 @@ redirect_from:
 <!--## Undergraduate courses-->
 ## Shanghai Jiao Tong University, China
 
-## 2024 Spring  *Coming soon...*
+## 2024 Spring
 CS1107 - *VR/AR Design and Development Practice* <br>
 
 ## 2023 Fall 
@@ -24,7 +24,7 @@ SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
 ## 2023 Spring
-CS1107 - *VR/AR Design and Development Practice* <br>
+CS1107 - *VR/AR Design and Development Practice* <br> 
 
 ## 2022 Fall
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
