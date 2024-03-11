@@ -14,7 +14,7 @@ Before entering SJTU, I worked on the 3D LiDAR point cloud data visaulization an
 
 I gained my Master of Science in Digital Media Technology in 2017 from Nanyang Technological University, Singapore. And I obtained my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China, in 2016. You can see through [my CV web page for more details.](https://zwm0426.github.io/cv/)
 
-My research mainly focuses on computer-human interaction (HCI), user interface (UI) design, VR/AR applications, and courses design.
+My research mainly focuses on computer-human interaction (HCI), artificial intelligence generated content (AIGC), virtual reality (VR)/ augmented reality (AR), and courses design.
 
 ![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of head of the SJTU AIGC Class, where I am responsible for managing and guiding the learning and development of the class.
 
