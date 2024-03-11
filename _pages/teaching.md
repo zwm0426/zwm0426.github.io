@@ -13,18 +13,18 @@ redirect_from:
 ## Shanghai Jiao Tong University, China
 
 ## 2024 Spring
-CS1107 - *VR/AR Design and Development Practice* <br>
+CS1107 - *VR/AR Design and Development Practice* <br> 
 
 ## 2023 Fall 
-CS1108 - *Introduction to Data Science - The Way of Python* <br>
-CS1107 - *VR/AR Design and Development Practice* <br>
+CS1108 - *Introduction to Data Science - The Way of Python* (Rated **4.5/5.0** by Students)<br> 
+CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students) <br>
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
 ## 2023 Summer 
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
 
 ## 2023 Spring
-CS1107 - *VR/AR Design and Development Practice* <br> 
+CS1107 - *VR/AR Design and Development Practice* (**A2** Course in SJTU)<br> 
 
 ## 2022 Fall
 SI1210 - *Engineer Practicing*: Module of MATLAB <br>
