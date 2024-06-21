@@ -13,7 +13,7 @@ redirect_from:
 ## Shanghai Jiao Tong University, China
 
 ## 2024 Spring
-CS1107 - *VR/AR Design and Development Practice* <br> 
+CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students)<br> 
 
 ## 2023 Fall 
 CS1107 - *VR/AR Design and Development Practice* (**Top 5%** **A0-Rated** Course in SJTU, Rated **5.0/5.0** by Students) <br>
