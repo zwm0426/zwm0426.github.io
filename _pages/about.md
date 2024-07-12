@@ -8,15 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am an engineer working in [Student Innovation Center of Shanghai Jiao Tong University](https://www.si.sjtu.edu.cn), China. My responsibility is to develop brand-new courses, give lectures to students, collaborate with cooperations, and instruct our students in competitions. Giving MATLAB, OpenCV, Unity3D, and Python programming courses to students across SJTU. For details of my previous and incoming teaching courses, please see through [my teaching web page.](https://zwm0426.github.io/teaching/)
+I am an engineer working at the [Student Innovation Center of Shanghai Jiao Tong University](https://www.si.sjtu.edu.cn), China. My responsibilities include developing new courses, lecturing students, collaborating with industry partners, and instructing students in competitions. I teach Python programming, virtual reality development, and artificial intelligence courses to students across SJTU. For details of my previous and upcoming courses, please visit [my teaching web page](https://zwm0426.github.io/teaching/).
 
-Before entering SJTU, I worked on the 3D LiDAR point cloud data visaulization and GUI design in Energy Research Institue @ NTU (ERI@N), Singapore. 
+Before joining SJTU, I worked as a Research Associate at the Energy Research Institute @ NTU (ERI@N), Singapore, focusing on 3D LiDAR point cloud data visualization and GUI design.
 
-I gained my Master of Science in Digital Media Technology in 2017 from Nanyang Technological University, Singapore. And I obtained my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China, in 2016. You can see through [my CV web page for more details.](https://zwm0426.github.io/cv/)
+I earned my Master of Science in Digital Media Technology from Nanyang Technological University, Singapore, in 2017, and my Bachelor of Science in Computer Science and Technology from Northwest University, Xi'an, China, in 2016. For more details, please visit [my CV web page](https://zwm0426.github.io/cv/).
 
-My research mainly focuses on computer-human interaction (HCI), artificial intelligence generated content (AIGC), virtual reality (VR)/ augmented reality (AR), and courses design.
+My research mainly focuses on computer-human interaction (HCI), artificial intelligence-generated content (AIGC), virtual reality (VR)/ augmented reality (AR), and courses design.
 
-![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of head of the SJTU AIGC Class, where I am responsible for managing and guiding the learning and development of the class.
+![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of the Head of the [SJTU AIGC Class](https://sjtu-aigc.github.io), where I am responsible for managing and guiding the learning and development of the class.
 
 
 <!-- ![](/images/under_construction.png){:width="220 px"} -->
