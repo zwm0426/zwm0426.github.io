@@ -16,7 +16,7 @@ I earned my Master of Science in Digital Media Technology from Nanyang Technolog
 
 My research mainly focuses on computer-human interaction (HCI), artificial intelligence-generated content (AIGC), virtual reality (VR)/ augmented reality (AR), and courses design.
 
-![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of the Head of the [SJTU AIGC Class](https://sjtu-aigc.github.io), where I am responsible for managing and guiding the learning and development of the class.
+![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of the Co-Chair of the [SJTU AIGC Class](https://sjtu-aigc.github.io), where I am responsible for managing and guiding the learning and development of the class.
 
 
 <!-- ![](/images/under_construction.png){:width="220 px"} -->
