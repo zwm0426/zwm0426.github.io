@@ -31,6 +31,7 @@ Employment
     * Course development and lecturing.
     * Students, competitions, laboratories & devices management.
     * Enterprise collaboration.
+    * Co-chair of SJTU AIGC Class.
 
 * Nov 2017 - June 2018: **Research Associate**
   * ![NTU-LOGO](/images/ntu-logo.png){:width="100px"}  Energy Research Institute @ NTU, Singapore
