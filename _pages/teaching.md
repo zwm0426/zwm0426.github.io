@@ -12,6 +12,9 @@ redirect_from:
 <!--## Undergraduate courses-->
 ## Shanghai Jiao Tong University, China
 
+## 2025 Spring
+CS1107 - *VR/AR Design and Development Practice* <br> 
+
 ## 2024 Spring
 CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students)<br> 
 
