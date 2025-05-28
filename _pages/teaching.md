@@ -12,8 +12,13 @@ redirect_from:
 <!--## Undergraduate courses-->
 ## Shanghai Jiao Tong University, China
 
+## 2025 Fall (Incoming...)
+CS1107 - *VR/AR Design and Development Practice* <br> 
+AI1113 - *Artificial Intelligence: Fundamentals and Practice* ![NEW](/images/new.png){:width="50px"} <br>
+
 ## 2025 Spring
 CS1107 - *VR/AR Design and Development Practice* <br> 
+CS1108 - *Introduction to Data Science - The Way of Python* <br> 
 
 ## 2024 Spring
 CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students)<br> 
