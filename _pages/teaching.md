@@ -17,11 +17,11 @@ CS1107 - *VR/AR Design and Development Practice* <br>
 AI1113 - *Artificial Intelligence: Fundamentals and Practice* ![NEW](/images/new.png){:width="50px"} <br>
 
 ## 2025 Summer
-ME3500J - *Design & Manufacturing II* <span style="color:gray; font-size:0.9em;">(Guest instructor for Mechatronics Lab)</span> <br> 
+ME3500J - *Design & Manufacturing II* <span style="color:gray; font-size:0.9em;">*(Guest instructor for Mechatronics Lab in UMich-SJTU Joint Institue)*</span> <br> 
 
 ## 2025 Spring
 CS1107 - *VR/AR Design and Development Practice* <br> 
-CS1108 - *Introduction to Data Science - The Way of Python* <span style="color:gray; font-size:0.9em;">(Main instructor: Tongxin REN)</span> <br> 
+CS1108 - *Introduction to Data Science - The Way of Python* <span style="color:gray; font-size:0.9em;">*(Main instructor: Mr. Tongxin REN)*</span> <br> 
 
 ## 2024 Spring
 CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students)<br> 
