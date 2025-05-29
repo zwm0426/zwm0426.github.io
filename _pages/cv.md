@@ -78,8 +78,7 @@ Skill
  
 * Others:
   * 📹 Video editing  📷 Photography  🎶 Music
-  * 🌴 Travel  📺 Televison Culture 
-  * 🚴 Cycling 🥎 Baseball  
+  * 🌴 Travel 🚴 Cycling 🥎 Baseball  
 
 <!--
   * Others:
