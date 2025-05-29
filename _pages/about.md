@@ -8,6 +8,20 @@ redirect_from:
   - /about.html
 ---
 
+I am an **educational engineer** and the **Director of the Extended Reality Lab** at the [**Student Innovation Center of Shanghai Jiao Tong University**](https://www.si.sjtu.edu.cn) (**SJTU**). I focus on **curriculum development**, **AI and XR education**, and **student innovation training**.
+
+I currently teach courses in **virtual reality development**, **data science**, and **artificial intelligence**, and collaborate with **industry partners**. I also **mentor students** in **academic and innovation competitions**. You can find more on [**my teaching web page**](https://zwm0426.github.io/teaching/).
+
+Since **December 2023**, I have served as the **Co-Chair** of the [**SJTU AIGC Class**](https://sjtu-aigc.github.io), where I co-lead program development and coordinate student activities. In **December 2024**, I was also appointed **Class Advisor** of the **SJTU AIGC Micro-Major**, where I am responsible for managing student progress, academic planning, and day-to-day class affairs.
+
+Prior to SJTU, I was a **Research Associate** at the **Energy Research Institute @ NTU (ERI@N)** in **Singapore**, specializing in **3D LiDAR visualization and GUI design**.
+
+I hold an **MSc in Digital Media Technology** from **Nanyang Technological University (NTU), Singapore**, and a **BSc in Computer Science and Technology** from **Northwest University, Xi’an**.
+
+My research interests include **human-computer interaction (HCI)**, **generative AI (AIGC)**, **virtual/augmented reality (VR/AR)**, and **AI-enhanced course design**.
+
+
+<!-- OLD VERSION
 I am an engineer working at the [Student Innovation Center of Shanghai Jiao Tong University](https://www.si.sjtu.edu.cn), China. My responsibilities include developing new courses, lecturing students, collaborating with industry partners, and instructing students in competitions. I teach Python programming, virtual reality development, and artificial intelligence courses to students across SJTU. For details of my previous and upcoming courses, please visit [my teaching web page](https://zwm0426.github.io/teaching/).
 
 Before joining SJTU, I worked as a Research Associate at the Energy Research Institute @ NTU (ERI@N), Singapore, focusing on 3D LiDAR point cloud data visualization and GUI design.
@@ -16,8 +30,7 @@ I earned my Master of Science in Digital Media Technology from Nanyang Technolog
 
 My research mainly focuses on computer-human interaction (HCI), artificial intelligence-generated content (AIGC), virtual reality (VR)/ augmented reality (AR), and courses design.
 
-![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of the Co-Chair of the [SJTU AIGC Class](https://sjtu-aigc.github.io), where I am responsible for managing and guiding the learning and development of the class.
-
+![NEW](/images/new.png){:width="50px"} Since December 2023, I have also taken on the role of the Co-Chair of the [SJTU AIGC Class](https://sjtu-aigc.github.io), where I am responsible for managing and guiding the learning and development of the class. -->
 
 <!-- ![](/images/under_construction.png){:width="220 px"} -->
 
