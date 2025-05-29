@@ -21,7 +21,7 @@ ME3500J - *Design & Manufacturing II* <span style="color:gray; font-size:0.9em;"
 
 ## 2025 Spring
 CS1107 - *VR/AR Design and Development Practice* <br> 
-CS1108 - *Introduction to Data Science - The Way of Python* <span style="color:gray; font-size:0.9em;">(Main instructor: TOngxin REN)</span> <br> 
+CS1108 - *Introduction to Data Science - The Way of Python* <span style="color:gray; font-size:0.9em;">(Main instructor: Tongxin REN)</span> <br> 
 
 ## 2024 Spring
 CS1107 - *VR/AR Design and Development Practice* (Rated **5.0/5.0** by Students)<br> 
