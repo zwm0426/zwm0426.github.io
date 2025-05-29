@@ -8,15 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am an **educational engineer** and the **Director of the Extended Reality Lab** at the [**Student Innovation Center of Shanghai Jiao Tong University**](https://www.si.sjtu.edu.cn) (**SJTU**). I focus on **curriculum development**, **AI and XR education**, and **student innovation training**.
+I am an **educational engineer** and the **Director of the Extended Reality Lab** at the [Student Innovation Center of Shanghai Jiao Tong University](https://www.si.sjtu.edu.cn) (SJTU). I focus on curriculum development, AI and XR education, and student innovation training.
 
-I currently teach courses in **virtual reality development**, **data science**, and **artificial intelligence**, and collaborate with **industry partners**. I also **mentor students** in **academic and innovation competitions**. You can find more on [**my teaching web page**](https://zwm0426.github.io/teaching/).
+I currently teach courses in virtual reality development, data science, and artificial intelligence, and collaborate with industry partners. I also mentor students in academic and innovation competitions. You can find more on [my teaching web page](https://zwm0426.github.io/teaching/).
 
-Since **December 2023**, I have served as the **Co-Chair** of the [**SJTU AIGC Class**](https://sjtu-aigc.github.io), where I co-lead program development and coordinate student activities. In **December 2024**, I was also appointed **Class Advisor** of the **SJTU AIGC Micro-Major**, where I am responsible for managing student progress, academic planning, and day-to-day class affairs.
+Since December 2023, I have served as the **Co-Chair** of the [**SJTU AIGC Class**](https://sjtu-aigc.github.io), where I co-lead program development and coordinate student activities. In December 2024, I was also appointed **Class Advisor** of the **SJTU AIGC Micro-Major**, where I am responsible for managing student progress, academic planning, and day-to-day class affairs.
 
-Prior to SJTU, I was a **Research Associate** at the **Energy Research Institute @ NTU (ERI@N)** in **Singapore**, specializing in **3D LiDAR visualization and GUI design**.
+Prior to SJTU, I was a Research Associate at the **Energy Research Institute @ NTU (ERI@N)** in Singapore, specializing in **3D LiDAR visualization and GUI design**.
 
-I hold an **MSc in Digital Media Technology** from **Nanyang Technological University (NTU), Singapore**, and a **BSc in Computer Science and Technology** from **Northwest University, Xi’an**.
+I hold an MSc in Digital Media Technology from Nanyang Technological University (NTU), Singapore, and a BSc in Computer Science and Technology from Northwest University, Xi’an.
 
 My research interests include **human-computer interaction (HCI)**, **generative AI (AIGC)**, **virtual/augmented reality (VR/AR)**, and **AI-enhanced course design**.
 
