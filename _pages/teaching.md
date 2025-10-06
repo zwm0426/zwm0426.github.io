@@ -12,7 +12,8 @@ redirect_from:
 <!--## Undergraduate courses-->
 ## Shanghai Jiao Tong University, China
 
-## 2025 Fall (*Coming Soon ...*)
+<!--(*Coming Soon ...*) -->
+## 2025 Fall 
 CS1107 - *VR/AR Design and Development Practice* <br> 
 AI1113 - *Artificial Intelligence: Fundamentals and Practice* ![NEW](/images/new.png){:width="50px"} <br>
 
