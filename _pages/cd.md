@@ -5,98 +5,72 @@ permalink: /cd/
 ---
 
 <style>
-  body{ font-family:system-ui,-apple-system,"Segoe UI",sans-serif; text-align:center; }
-  h1{ margin-bottom:16px; }
-  .grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap:16px; max-width:900px; margin:0 auto; padding:8px;
+  body {
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   }
-  .card{
-    background:#fff; border:1px solid #e5e7eb; border-radius:16px;
-    box-shadow:0 4px 10px rgba(0,0,0,.05); padding:14px; text-align:left;
+  .countdown {
+    font-size: 2.2em;
+    margin-top: 20px;
+    color: #E63946;
+    font-weight: bold;
   }
-  .title{ font-weight:700; font-size:15px; }
-  .when{ color:#667085; font-size:12px; margin-top:4px; }
-  .left{ font-size:26px; font-weight:800; color:#E63946; margin-top:10px; }
-  .sub{ color:#667085; font-size:12px; margin-top:4px; }
-  .bar{ height:8px; background:#f2f4f7; border-radius:999px; overflow:hidden; margin-top:10px; }
-  .fill{ height:100%; width:0%; background:#E63946; transition:width .4s linear; }
-  .note{ margin-top:12px; color:#667085; font-size:12px; }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 8px;
+  }
+  .note {
+    margin-top: 6px;
+    color: #666;
+    font-size: 0.9em;
+  }
 </style>
 
 <h1>⏳ Countdowns</h1>
-<div id="wrap" class="grid"></div>
-<p class="note">Last updated: <span id="now">—</span></p>
+<div id="container"></div>
+<p class="note">Last updated: <span id="now"></span></p>
 
 <script>
-/* 只改这里 */
+/* 只需在这里增删事件 */
 const events = [
-  { title: "🎆 2026 New Year",        date: "2026-01-01T00:00:00+08:00", color: "#E63946" },
-  { title: "🧠 AIGC Micro-Major 开学", date: "2026-03-01T09:00:00+08:00", color: "#22c55e" },
-  { title: "🎓 毕业答辩",               date: "2026-06-20T14:00:00+08:00", color: "#3b82f6" },
-  { title: "🧾 CHI 2026 截稿",          date: "2026-09-15T23:59:59+09:00", color: "#f59e0b" }
+  { title: "🎆 2026 New Year", date: "2026-01-01T00:00:00+08:00" },
+  { title: "🧠 AIGC Micro-Major 开学", date: "2026-03-01T09:00:00+08:00" },
+  { title: "🎓 毕业答辩", date: "2026-06-20T14:00:00+08:00" },
+  { title: "🧾 CHI 2026 截稿", date: "2026-09-15T23:59:59+09:00" },
 ];
 
-const wrap = document.getElementById("wrap");
+const container = document.getElementById("container");
 
-function makeCard(ev, idx){
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-    <div class="title">${ev.title}</div>
-    <div class="when" id="w-${idx}"></div>
-    <div class="left" id="t-${idx}">—</div>
-    <div class="sub"  id="s-${idx}"></div>
-    <div class="bar"><div class="fill" id="f-${idx}"></div></div>
+function makeCard(ev) {
+  const div = document.createElement("div");
+  div.innerHTML = `
+    <h2>${ev.title}</h2>
+    <div id="cd-${ev.title}" class="countdown">Loading...</div>
   `;
-  // 个性化颜色
-  if (ev.color){
-    card.style.borderColor = ev.color;
-    card.querySelector(".left").style.color = ev.color;
-    card.querySelector(".fill").style.background = ev.color;
-  }
-  wrap.appendChild(card);
+  container.appendChild(div);
 }
 
 events.forEach(makeCard);
 
-function fmt(ms){
-  if (ms <= 0) return "🎉 Time's up!";
-  const d = Math.floor(ms/86400000);
-  const h = Math.floor((ms/3600000)%24);
-  const m = Math.floor((ms/60000)%60);
-  const s = Math.floor((ms/1000)%60);
-  return `${d}d ${h}h ${m}m ${s}s`;
-}
-
-function update(){
+function update() {
   const now = new Date();
   document.getElementById("now").textContent = now.toLocaleString();
-  events.forEach((ev,i)=>{
+
+  events.forEach((ev) => {
     const target = new Date(ev.date);
     const diff = target - now;
+    const el = document.getElementById(`cd-${ev.title}`);
+    if (!el) return;
 
-    const w = document.getElementById(`w-${i}`);
-    const t = document.getElementById(`t-${i}`);
-    const s = document.getElementById(`s-${i}`);
-    const f = document.getElementById(`f-${i}`);
-
-    w.textContent = target.toLocaleString();
-    t.textContent = fmt(diff);
-    s.textContent = diff>0 ? `剩余 ${(diff/3600000).toFixed(2)} 小时` : "";
-
-    // 进度条：如提供 start 按 start→target 计算，否则用 30 天窗口粗略可视化
-    let pct = 0;
-    if (ev.start){
-      const start = new Date(ev.start);
-      const total = target - start;
-      const done  = now - start;
-      pct = Math.max(0, Math.min(100, (done/Math.max(total,1))*100));
-    } else {
-      pct = Math.max(0, Math.min(100, (1 - diff/(30*24*3600*1000))*100));
+    if (diff <= 0) {
+      el.textContent = "🎉 Time's up!";
+      return;
     }
-    f.style.width = pct + "%";
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+    el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   });
 }
 
