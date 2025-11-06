@@ -4,15 +4,19 @@ title: "Countdowns"
 permalink: /cd/
 # 只改下面这个 events 列表即可（支持任意多条）
 events:
-  - label: "AIGC Micro-Major 开学"
-    date:  "2026-03-01T09:00:00+08:00"
+  - label: "投出第一篇论文"
+    date:  "2025-12-01T10:00:00+08:00"
     color: "#22c55e"
-  - label: "CHI 2026 投稿截止"
-    date:  "2026-09-15T23:59:59+09:00"
+  - label: "投出第二篇论文"
+    date:  "2026-03-1T10:00:00+08:00"
     color: "#f59e0b"
-  - label: "毕业答辩"
+  - label: "投出第三篇论文"
     date:  "2026-06-20T14:00:00+08:00"
     color: "#3b82f6"
+  - label: "申请副高材料准备完毕"
+    date:  "2027-10-01T14:00:00+08:00"
+    color: "#3b82f6"    
+
 ---
 
 <style>
