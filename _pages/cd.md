@@ -2,106 +2,83 @@
 layout: page
 title: "Countdowns"
 permalink: /cd/
-# 只改下面这个 events 列表即可（支持任意多条）
 events:
-  - label: "投出第一篇论文"
-    date:  "2025-12-01T10:00:00+08:00"
+  - label: "AIGC Micro-Major 开学"
+    date:  "2026-03-01T09:00:00+08:00"
     color: "#22c55e"
-  - label: "投出第二篇论文"
-    date:  "2026-03-1T10:00:00+08:00"
+  - label: "CHI 2026 截稿"
+    date:  "2026-09-15T23:59:59+09:00"
     color: "#f59e0b"
-  - label: "投出第三篇论文"
+  - label: "毕业答辩"
     date:  "2026-06-20T14:00:00+08:00"
     color: "#3b82f6"
-  - label: "申请副高材料准备完毕"
-    date:  "2027-10-01T14:00:00+08:00"
-    color: "#3b82f6"    
-
 ---
 
 <style>
-  :root { --card-bg:#0b1222; --card-fg:#e5e7eb; --muted:#9ca3af; --ring:#6366f1; }
   .cd-wrap{max-width:900px;margin:0 auto;padding:24px}
   .cd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-  .cd-card{background:var(--card-bg);color:var(--card-fg);border-radius:16px;padding:16px;border:1px solid #1f2937}
+  .cd-card{background:#0b1222;color:#e5e7eb;border-radius:16px;padding:16px;border:1px solid #1f2937}
   .cd-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-  .cd-dot{width:10px;height:10px;border-radius:999px;flex:0 0 10px;outline:2px solid var(--ring);outline-offset:2px}
+  .cd-dot{width:10px;height:10px;border-radius:999px;flex:0 0 10px;outline:2px solid #6366f1;outline-offset:2px}
   .cd-title{font-weight:700;line-height:1.2}
-  .cd-when{font-size:12px;color:var(--muted)}
+  .cd-when{font-size:12px;color:#9ca3af}
   .cd-left{font-size:28px;font-weight:800;margin:6px 0}
-  .cd-sub{font-size:12px;color:var(--muted)}
+  .cd-sub{font-size:12px;color:#9ca3af}
   .cd-bar{height:8px;background:#111827;border-radius:999px;overflow:hidden;margin-top:10px}
   .cd-fill{height:100%;width:0%}
-  .cd-empty{color:var(--muted);text-align:center;margin-top:24px}
+  .cd-empty{color:#666;text-align:center;margin-top:24px}
 </style>
 
 <div class="cd-wrap">
   <h1>⏳ Countdowns</h1>
   <div id="cd-grid" class="cd-grid"></div>
   <div id="cd-empty" class="cd-empty" style="display:none;">没有待办事件</div>
+  <div id="cd-debug" class="cd-empty"></div>
 </div>
 
-<!-- 把 front-matter 的 events 变成 JSON 供 JS 读取 -->
-<script id="cd-data" type="application/json">
-  {{ page.events | jsonify }}
-</script>
+<!-- Liquid 输出 YAML 数据为 JSON -->
+<script id="cd-data" type="application/json">{{ page.events | jsonify }}</script>
 
 <script>
 (function () {
   const container = document.getElementById('cd-grid');
-  const data = JSON.parse(document.getElementById('cd-data').textContent || '[]');
+  const jsonRaw = document.getElementById('cd-data').textContent || '[]';
+  let data = [];
+  try { data = JSON.parse(jsonRaw) || []; } catch(e) { data = []; }
+
+  // 简单显示调试信息（看到 "events: N" 就说明拿到数据了）
+  document.getElementById('cd-debug').textContent = 'events: ' + data.length;
 
   if (!data.length) {
     document.getElementById('cd-empty').style.display = 'block';
     return;
   }
 
-  // 生成卡片
-  function makeCard(ev, idx) {
+  function makeCard(ev, i) {
     const card = document.createElement('div');
     card.className = 'cd-card';
     card.innerHTML = `
       <div class="cd-head">
-        <div class="cd-dot" id="dot-${idx}"></div>
+        <div class="cd-dot" id="dot-${i}"></div>
         <div>
           <div class="cd-title">${ev.label}</div>
-          <div class="cd-when" id="when-${idx}"></div>
+          <div class="cd-when" id="when-${i}"></div>
         </div>
       </div>
-      <div class="cd-left" id="left-${idx}">—</div>
-      <div class="cd-sub" id="sub-${idx}"></div>
-      <div class="cd-bar"><div class="cd-fill" id="fill-${idx}"></div></div>
+      <div class="cd-left" id="left-${i}">—</div>
+      <div class="cd-sub" id="sub-${i}"></div>
+      <div class="cd-bar"><div class="cd-fill" id="fill-${i}"></div></div>
     `;
-    // 色点 & 进度色
-    const dot = card.querySelector(`#dot-${idx}`);
-    const fill = card.querySelector(`#fill-${idx}`);
-    if (ev.color) {
-      dot.style.background = ev.color;
-      fill.style.background = ev.color;
-    } else {
-      dot.style.background = '#10b981';
-      fill.style.background = '#10b981';
-    }
+    const dot = card.querySelector(`#dot-${i}`);
+    const fill = card.querySelector(`#fill-${i}`);
+    const color = ev.color || '#10b981';
+    dot.style.background = color;
+    fill.style.background = color;
     return card;
   }
 
-  // 渲染所有
   data.forEach((ev, i) => container.appendChild(makeCard(ev, i)));
 
-  // 可选：按剩余时间排序（最近的在前）
-  function sortCards() {
-    const items = Array.from(container.children);
-    items.sort((a, b) => {
-      const i = +a.querySelector('[id^="left-"]').id.split('-')[1];
-      const j = +b.querySelector('[id^="left-"]').id.split('-')[1];
-      const ta = new Date(data[i].date) - new Date();
-      const tb = new Date(data[j].date) - new Date();
-      return ta - tb;
-    });
-    items.forEach(el => container.appendChild(el));
-  }
-
-  // 计算并刷新显示
   function update() {
     const now = new Date();
     data.forEach((ev, i) => {
@@ -113,7 +90,6 @@ events:
       const subEl  = document.getElementById(`sub-${i}`);
       const fillEl = document.getElementById(`fill-${i}`);
 
-      // 目标时间文本
       whenEl.textContent = target.toLocaleString();
 
       if (diff <= 0) {
@@ -123,30 +99,18 @@ events:
         return;
       }
 
-      const d = Math.floor(diff / (1000*60*60*24));
-      const h = Math.floor((diff / (1000*60*60)) % 24);
-      const m = Math.floor((diff / (1000*60)) % 60);
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff / 3600000) % 24);
+      const m = Math.floor((diff / 60000) % 60);
       const s = Math.floor((diff / 1000) % 60);
 
       leftEl.textContent = `${d}d ${h}h ${m}m ${s}s`;
       subEl.textContent  = `剩余：${(diff/3600000).toFixed(2)} 小时`;
 
-      // 进度（如果提供 start，可显示从 start→target 的百分比；否则基于“剩余≤30天”的反向进度）
-      if (ev.start) {
-        const start = new Date(ev.start);
-        const total = target - start;
-        const done = now - start;
-        const pct = Math.max(0, Math.min(100, (done/total)*100));
-        fillEl.style.width = pct + "%";
-      } else {
-        // 没提供 start：用 “还剩多少/30天” 粗略可视化
-        const pct = Math.max(0, Math.min(100, (1 - diff/(30*24*3600*1000))*100));
-        fillEl.style.width = pct + "%";
-      }
+      // 粗略进度（以 30 天窗口可视化）
+      const pct = Math.max(0, Math.min(100, (1 - diff/(30*24*3600*1000))*100));
+      fillEl.style.width = pct + "%";
     });
-
-    // 可选：动态排序（每 10 秒排一次）
-    if ((Math.floor(Date.now()/1000)) % 10 === 0) sortCards();
   }
 
   update();
