@@ -12,7 +12,7 @@ subtitle: "Interdisciplinary Engineer & Researcher specializing in AI, XR, and H
 
 ## Professional Experience
 
-### Engineer / Lab Director
+### Engineer / Director of XR Lab
 **Student Innovation Center, Shanghai Jiao Tong University** | 2019 – Present
 * **Curriculum Design**: Co-chair of SJTU AIGC Class, leading the development of generative AI and XR elective courses.
 * **Lab Management**: Director of the XR Lab, overseeing advanced equipment procurement and student innovation training.
