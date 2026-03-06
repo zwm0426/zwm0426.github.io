@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Code, Users, GraduationCap, MapPin } from 'lucide-react';
+import aboutImg from '../assets/images/about3.webp';
 
 const SectionHeading = ({ children, subtitle }: { children: React.ReactNode; subtitle?: string }) => (
   <div className="mb-12">
@@ -87,8 +88,8 @@ const About = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden bg-zinc-100">
                <img 
-                src="https://picsum.photos/seed/lab/800/800" 
-                alt="Lab Environment" 
+                src={aboutImg.src} 
+                alt="About me" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
                />
