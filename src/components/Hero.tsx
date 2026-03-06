@@ -30,13 +30,14 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
           >
             <span className="inline-block px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-xs font-semibold uppercase tracking-wider mb-4">
-              Engineer @ NAOCE, SJTU
+              {/* Engineer @ NAOCE, SJTU */} Educational Engineer @ SIC, SJTU
             </span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-zinc-900 mb-6">
               Hi, I'm <span className="text-zinc-500">Kevin</span> ZHAO Weiming
             </h1>
             <p className="text-xl text-zinc-600 leading-relaxed max-w-2xl mb-10">
-              I am an Engineer at the School of Ocean and Civil Engineering (NAOCE) at Shanghai Jiao Tong University. My work focuses on integrating advanced technologies with engineering practices, drawing from my strong interdisciplinary background in Artificial Intelligence (AI), Extended Reality (XR), and Human-Computer Interaction (HCI).
+              I am an Engineer at the Student Innovation Center at Shanghai Jiao Tong University. My work focuses on integrating advanced technologies with engineering practices, drawing from my strong interdisciplinary background in Artificial Intelligence (AI), Extended Reality (XR), and Human-Computer Interaction (HCI).
+              {/* I am an Engineer at the School of Ocean and Civil Engineering (NAOCE) at Shanghai Jiao Tong University. My work focuses on integrating advanced technologies with engineering practices, drawing from my strong interdisciplinary background in Artificial Intelligence (AI), Extended Reality (XR), and Human-Computer Interaction (HCI). */}
             </p>
             
             <div className="flex flex-wrap gap-4">
