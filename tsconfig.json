@@ -10,8 +10,17 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    "isolatedModules": true, // 👉 Vite/Astro 强制要求，确保每个文件可以安全地单独转译
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  // 👇 关键：告诉 TS 引擎要去扫描哪些文件，特别是你的环境声明文件
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.astro",
+    "src/env.d.ts" 
+  ],
+  "exclude": ["node_modules"]
 }
