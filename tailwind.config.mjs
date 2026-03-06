@@ -4,5 +4,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'), // 👉 关键：把排版插件注册进来！
+  ],
 }
