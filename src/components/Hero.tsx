@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ChevronRight } from 'lucide-react';
+import avatarImg from '../assets/images/kevin_zhao_avatar.webp';
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-zinc-200 to-zinc-100 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <img 
-              src="/images/kevin_zhao_avatar.webp" 
+              src={avatarImg.src} 
               alt="Kevin ZHAO Weiming" 
               className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
             />

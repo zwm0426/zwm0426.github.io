@@ -15,12 +15,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/', type: 'route' },
+    { name: 'Home', href: '/newHomePage/', type: 'route' },
     { name: 'About', href: '/#about', type: 'hash' },
-    { name: 'News', href: '/news', type: 'route' },
-    { name: 'Projects', href: '/projects', type: 'route' },
-    { name: 'Teaching', href: '/teaching', type: 'route' },
-    { name: 'Publications', href: '/publications', type: 'route' },
+    { name: 'News', href: '/newHomePage/news', type: 'route' },
+    { name: 'Projects', href: '/newHomePage/projects', type: 'route' },
+    { name: 'Teaching', href: '/newHomePage/teaching', type: 'route' },
+    { name: 'Publications', href: '/newHomePage/publications', type: 'route' },
     { name: 'CV', href: '/cv', type: 'route' },
   ];
 
