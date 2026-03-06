@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Code, Users, GraduationCap, MapPin } from 'lucide-react';
-import aboutImg from '../assets/images/about3.webp';
+import aboutImg from '../assets/images/about6.webp';
 
 const SectionHeading = ({ children, subtitle }: { children: React.ReactNode; subtitle?: string }) => (
   <div className="mb-12">
