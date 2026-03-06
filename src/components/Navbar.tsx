@@ -91,7 +91,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Overlay - 👉 第三步：渲染折叠菜单 */}
-        <div className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-zinc-200 transition-all duration-300 origin-top ${
+        {/* 关键修改：将 bg-white 改为 bg-white/80，并添加 backdrop-blur-md */}
+        <div className={`md:hidden absolute top-full left-0 right-0 bg-white/80 backdrop-blur-md border-b border-zinc-200 transition-all duration-300 origin-top ${
           isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
         }`}>
           <div className="px-6 py-8 flex flex-col space-y-6">
