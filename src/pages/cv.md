@@ -5,7 +5,7 @@ subtitle: "Interdisciplinary Engineer & Researcher specializing in AI, XR, and H
 ---
 
 <div class="flex justify-end mb-8">
-  <a href="..assets/files/CV_Weiming_Zhao.pdf" class="px-4 py-2 bg-zinc-900 text-white rounded-lg text-sm font-medium hover:bg-zinc-800 transition-colors">
+  <a href="../assets/files/CV_Weiming_Zhao.pdf" class="px-5 py-2.5 bg-zinc-900 !text-white no-underline rounded-xl text-sm font-semibold hover:bg-zinc-800 transition-all shadow-md hover:shadow-lg active:scale-95">
     Download PDF
   </a>
 </div>
@@ -45,8 +45,8 @@ subtitle: "Interdisciplinary Engineer & Researcher specializing in AI, XR, and H
 
 ## Technical Skills
 
-* **Software & Systems**: Unity, PyTorch, React, TypeScript, Python, C/C++.
-* **Specialized Tech**: ARCore/ARKIt, 3D Visualization, Generative AI Workflows.
+* **Software & Systems**: Unity, PyTorch, Python, C/C++.
+* **Specialized Tech**: 3D Visualization, Generative AI Workflows.
 * **Languages**: Mandarin (Native), English (Professional - IELTS 7.0).
 
 ---
