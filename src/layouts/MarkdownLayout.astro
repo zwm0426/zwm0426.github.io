@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { ArrowLeft } from 'lucide-react';
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-16">
+        <a href="/" class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Home
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{frontmatter.title}</h1>
+        {frontmatter.subtitle && <p class="text-xl text-zinc-500 max-w-3xl">{frontmatter.subtitle}</p>}
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <div class="prose prose-zinc prose-lg max-w-none prose-headings:text-zinc-900 prose-headings:font-bold prose-p:text-zinc-600 prose-a:text-zinc-900 prose-a:font-bold prose-strong:text-zinc-900">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+
+const projects = [1, 2, 3, 4];
+---
+
+<BaseLayout title="Projects" description="Selected works in AI, XR, and Human-Computer Interaction.">
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href="/" class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Home
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">Projects</h1>
+        <p class="text-xl text-zinc-500 max-w-3xl">Selected works in AI, XR, and Human-Computer Interaction.</p>
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {projects.map((p) => (
+          <div class="group">
+            <div class="aspect-video rounded-3xl overflow-hidden bg-zinc-100 mb-6 relative">
+              <img 
+                src={`https://picsum.photos/seed/project${p}/800/450`} 
+                alt={`Project ${p}`} 
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div class="absolute top-4 right-4">
+                <div class="w-10 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-zinc-900 shadow-lg">
+                  <ExternalLink size={18} className="" />
+                </div>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 group-hover:text-zinc-600 transition-colors">Innovative XR Interface {p}</h3>
+            <p class="text-zinc-500 mb-4">A brief description of the project, the technologies used, and the impact it had on the field of engineering.</p>
+            <div class="flex gap-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-zinc-100 rounded">Unity</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-zinc-100 rounded">AI</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-zinc-100 rounded">HCI</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
