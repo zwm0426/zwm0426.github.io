@@ -5,7 +5,7 @@ subtitle: "Interdisciplinary Engineer & Researcher specializing in AI, XR, and H
 ---
 
 <div class="flex justify-end mb-8">
-  <a href="../assets/files/CV_Weiming_Zhao.pdf" class="px-5 py-2.5 bg-zinc-900 !text-white no-underline rounded-xl text-sm font-semibold hover:bg-zinc-800 transition-all shadow-md hover:shadow-lg active:scale-95">
+  <a href="/CV_Weiming_Zhao.pdf" class="px-5 py-2.5 bg-zinc-900 !text-white no-underline rounded-xl text-sm font-semibold hover:bg-zinc-800 transition-all shadow-md hover:shadow-lg active:scale-95">
     Download PDF
   </a>
 </div>

@@ -2,10 +2,105 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ArrowLeft } from 'lucide-react';
 
-const years = [2025, 2024, 2023];
+const publications = [
+  {
+    year: 2025,
+    items: [
+      {
+        title: "Revealing Directions for Text-guided 3D Face Editing",
+        authors: "Zhuo Chen, Yichao Yan, Shengqi Liu, Yuhao Cheng, **Weiming Zhao**, Lincheng Li",
+        venue: "IEEE Transactions on Multimedia",
+        links: [
+          { name: "IEEE Xplore", href: "https://ieeexplore.ieee.org/document/11177229/" }
+        ]
+      },
+      {
+        title: "Towards High-fidelity 3D Talking Avatar with Personalized Dynamic Texture",
+        authors: "Xuanchen Li, Jianyu Wang, Yuhao Cheng, Yikun Zeng, Xingyu Ren, Wenhan Zhu, **Weiming Zhao**, Yichao Yan",
+        venue: "Computer Vision and Pattern Recognition (CVPR)",
+        links: [
+          { name: "arXiv", href: "https://arxiv.org/abs/2503.00495" }
+        ]
+      }
+    ]
+  },
+  {
+    year: 2024,
+    items: [
+      {
+        title: "IPAD: Industrial Process Anomaly Detection Dataset",
+        authors: "Jinfan Liu, Yichao Yan, Junjie Li, **Weiming Zhao**, Pengzhi Chu, Xingdong Sheng, Yunhui Liu, Xiaokang Yang",
+        venue: "IEEE Transactions on Circuits and Systems for Video Technology",
+        links: [
+          { name: "IEEE Xplore", href: "https://ieeexplore.ieee.org/document/10685491" },
+          { name: "arXiv", href: "https://arxiv.org/abs/2404.15033" }
+        ]
+      },
+      {
+        title: "Infusion: Preventing Customized Text-to-Image Diffusion from Overfitting",
+        authors: "Weili Zeng, Yichao Yan, Qi Zhu, Zhuo Chen, Pengzhi Chu, **Weiming Zhao**, and Xiaokang Yang",
+        venue: "ACM Multimedia (MM '24)",
+        links: [
+          { name: "Project Page", href: "https://zwl666666.github.io/infusion/" },
+          { name: "Code", href: "https://github.com/zwl666666/infusion" },
+          { name: "arXiv", href: "https://arxiv.org/abs/2404.14007" },
+          { name: "DOI", href: "https://doi.org/10.1145/3664647.3680894" }
+        ]
+      }
+    ]
+  },
+  {
+    year: 2022,
+    items: [
+      {
+        title: "The Design of Autonomous Driving Experimental Platform Based on the Huawei Cloud Model Arts and HiLens",
+        authors: "Pengzhi Chu, Bo Xu, Xiongziyan Xiao, **Weiming Zhao**, Wankun Xue",
+        venue: "Drive System Technique",
+        links: [
+          { name: "PDF", href: "/files/基于华为云ModelArts及HiLens自动驾驶实验平台的设计.pdf" }
+        ]
+      }
+    ]
+  },
+  {
+    year: 2021,
+    items: [
+      {
+        title: "Course Design of 'The Basic MATLAB Practice' for Non-Computer-Science Students",
+        authors: "**Weiming Zhao**, Wankun Xue",
+        venue: "Contemporary Education Research and Teaching Practice",
+        links: [
+          { name: "PDF", href: "/files/针对非计算机专业学生的《MATLAB实践》课程设计.pdf" }
+        ]
+      },
+      {
+        title: "Intelligent Interaction Course Construction facing Non-Programming Students Based on Raspberry Pi",
+        authors: "Wankun Xue, **Weiming Zhao**",
+        venue: "Contemporary Education Research and Teaching Practice",
+        links: [
+          { name: "PDF", href: "/files/基于树莓派的面向无编程基础学生的智能交互实践性课程建设.pdf" }
+        ]
+      }
+    ]
+  },
+  {
+    year: 2020,
+    items: [
+      {
+        title: "Calibration Method of Three-Dimensional Point Cloud Acquisition System",
+        authors: "**Weiming Zhao**",
+        venue: "China National Intellectual Property Administration (Patent: CN110196031B)",
+        links: [
+          { name: "Google Patent", href: "https://patents.google.com/patent/CN110196031B/en" },
+          { name: "PDF", href: "/files/CN110196031B.pdf" }
+        ]
+      }
+    ]
+  }
+];
 ---
 
-<BaseLayout title="Publications" description="Research contributions in HCI, XR, and AI.">
+<BaseLayout title="Publications" description="Research contributions in AI, XR, and Multimedia.">
   <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="mb-16">
@@ -13,36 +108,43 @@ const years = [2025, 2024, 2023];
           <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Home
         </a>
         <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">Publications</h1>
-        <p class="text-xl text-zinc-500 max-w-3xl">Research contributions in HCI, XR, and AI.</p>
+        <p class="text-xl text-zinc-500 max-w-3xl">Research contributions in AI, XR, and Multimedia.</p>
         <div class="h-1 bg-zinc-900 w-20 mt-8" />
       </div>
 
-      <div class="space-y-12">
-        {years.map((year) => (
+      <div class="space-y-20">
+        {publications.map((group) => (
           <div>
-            <h3 class="text-xl font-bold text-zinc-400 mb-8 border-b border-zinc-100 pb-2">{year}</h3>
-            <div class="space-y-8">
-              {[1, 2].map((pub) => (
-                <div class="group">
-                  <p class="text-lg font-bold group-hover:text-zinc-600 transition-colors mb-2">
-                    Towards Seamless Interaction: A Study on AI-Driven Gesture Recognition in Immersive XR Environments
-                  </p>
+            <h2 class="text-2xl font-bold text-zinc-900 mb-10 sticky top-24 bg-white/80 backdrop-blur-sm z-10 py-2 border-b border-zinc-100 flex items-baseline gap-4">
+              {group.year}
+              <span class="text-sm font-normal text-zinc-400 font-mono tracking-tighter">/ {group.items.length} Papers</span>
+            </h2>
+            <div class="space-y-12">
+              {group.items.map((pub) => (
+                <div class="group relative pl-0 md:pl-8 border-l-0 md:border-l border-zinc-100 hover:border-zinc-900 transition-colors">
+                  <h3 class="text-xl font-bold text-zinc-900 group-hover:text-zinc-600 transition-colors mb-3 leading-tight">
+                    {pub.title}
+                  </h3>
                   <p class="text-zinc-500 text-sm mb-3">
-                    <span class="font-bold text-zinc-900">Kevin Zhao</span>, J. Smith, L. Wang.
+                    {/* 处理作者名字加粗 */}
+                    {pub.authors.split('**').map((part, i) => 
+                      i % 2 === 1 ? <span class="font-bold text-zinc-900">{part}</span> : part
+                    )}
                   </p>
-                  <p class="text-zinc-400 text-xs uppercase tracking-widest italic">
-                    Proceedings of the ACM on Human-Computer Interaction (PACMHCI), {year}
+                  <p class="text-zinc-400 text-xs uppercase tracking-widest italic font-medium">
+                    {pub.venue}
                   </p>
-                  <div class="flex gap-4 mt-4">
-                    <a href="#" class="text-xs font-bold text-zinc-900 flex items-center gap-1 hover:underline">
-                      [PDF]
-                    </a>
-                    <a href="#" class="text-xs font-bold text-zinc-900 flex items-center gap-1 hover:underline">
-                      [DOI]
-                    </a>
-                    <a href="#" class="text-xs font-bold text-zinc-900 flex items-center gap-1 hover:underline">
-                      [Code]
-                    </a>
+                  <div class="flex flex-wrap gap-3 mt-5">
+                    {pub.links.map((link) => (
+                      <a 
+                        href={link.href} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-tighter text-zinc-500 border border-zinc-200 rounded-full hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-all"
+                      >
+                        [{link.name}]
+                      </a>
+                    ))}
                   </div>
                 </div>
               ))}
