@@ -18,7 +18,7 @@ const Hero = () => {
             <img 
               src={avatarImg.src} 
               alt="Kevin ZHAO Weiming" 
-              className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-[30%_40%] border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+              className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-[30%_50%] border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
             />
           </div>
         </motion.div>
