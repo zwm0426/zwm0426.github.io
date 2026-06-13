@@ -2,13 +2,17 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../index.css';
+import site from '../data/site.json';
+import profile from '../data/profile.json';
+import navigation from '../data/navigation.json';
+import links from '../data/links.json';
 
 interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = "Kevin ZHAO Weiming's Personal Portfolio" } = Astro.props;
+const { title, description = site.siteDescription } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -18,7 +22,7 @@ const { title, description = "Kevin ZHAO Weiming's Personal Portfolio" } = Astro
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | Kevin Zhao</title>
+    <title>{title} | {site.siteShortTitle}</title>
     <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +38,11 @@ const { title, description = "Kevin ZHAO Weiming's Personal Portfolio" } = Astro
     )}
   </head>
   <body class="min-h-screen bg-white text-zinc-900 selection:bg-zinc-900 selection:text-white font-sans">
-    <Navbar client:load />
+    <Navbar client:load navigation={navigation} brand={profile.shortName} />
     <main>
       <slot />
     </main>
-    <Footer client:load />
+    <Footer client:load site={site} links={links} />
   </body>
 </html>
 

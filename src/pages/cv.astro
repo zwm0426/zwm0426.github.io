@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ArrowLeft } from 'lucide-react';
+import site from '../data/site.json';
+import cvData from '../data/cv.json';
+
+type CvItem = {
+  label: string;
+  description: string;
+};
+
+type CvEntry = {
+  title: string;
+  organization?: string;
+  detail?: string;
+  location?: string;
+  period?: string;
+  items?: CvItem[];
+};
+
+type CvSection = {
+  title: string;
+  entries?: CvEntry[];
+  items?: CvItem[];
+};
+
+type CvData = {
+  title: string;
+  subtitle: string;
+  sections: CvSection[];
+};
+
+const cv = cvData as CvData;
+---
+
+<BaseLayout title={cv.title} description={cv.subtitle}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href="/" class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Home
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{cv.title}</h1>
+        <p class="text-xl text-zinc-500 max-w-3xl">{cv.subtitle}</p>
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <div class="prose prose-zinc prose-lg max-w-none prose-headings:text-zinc-900 prose-headings:font-bold prose-p:text-zinc-600 prose-p:max-w-4xl prose-li:max-w-4xl prose-a:text-zinc-900 prose-a:font-bold prose-strong:text-zinc-900">
+        <div class="flex justify-end mb-8">
+          <a href={site.cvUrl} class="px-5 py-2.5 bg-zinc-900 !text-white no-underline rounded-xl text-sm font-semibold hover:bg-zinc-800 transition-all shadow-md hover:shadow-lg active:scale-95">
+            Download PDF
+          </a>
+        </div>
+
+        {cv.sections.map((section, sectionIndex) => (
+          <>
+            <h2>{section.title}</h2>
+
+            {section.entries?.map((entry) => (
+              <>
+                <h3>{entry.title}</h3>
+                {(entry.organization || entry.detail || entry.location || entry.period) && (
+                  <p>
+                    {(entry.organization || entry.detail) && <strong>{entry.organization ?? entry.detail}</strong>}
+                    {entry.organization && entry.detail && ` | ${entry.detail}`}
+                    {entry.location && ` | ${entry.location}`}
+                    {entry.period && ` | ${entry.period}`}
+                  </p>
+                )}
+                {entry.items && (
+                  <ul>
+                    {entry.items.map((item) => (
+                      <li><strong>{item.label}</strong>: {item.description}</li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            ))}
+
+            {section.items && (
+              <ul>
+                {section.items.map((item) => (
+                  <li><strong>{item.label}</strong>: {item.description}</li>
+                ))}
+              </ul>
+            )}
+
+            {sectionIndex < cv.sections.length - 1 && <hr />}
+          </>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

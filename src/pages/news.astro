@@ -1,10 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ChevronRight } from 'lucide-react';
 
 const newsEntries = await getCollection('news');
-const sortedNews = newsEntries.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+const sortedNews = newsEntries
+  .filter((item) => !item.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const formatNewsDate = (date: Date) => new Intl.DateTimeFormat('en', {
+  month: 'short',
+  year: 'numeric',
+}).format(date);
+
+const newsHref = (id: string) => `/news/${id.replace(/\.mdx?$/, '').replace(/\/index$/, '')}/`;
 ---
 
 <BaseLayout title="News" description="A complete timeline of my professional journey and updates.">
@@ -23,14 +32,19 @@ const sortedNews = newsEntries.sort((a, b) => (a.data.order || 99) - (b.data.ord
         {sortedNews.map((item) => (
           <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-start border-b border-zinc-100 pb-12">
             <div class="md:w-32 flex-shrink-0">
-              <span class="text-sm font-bold text-zinc-400 uppercase tracking-widest">{item.data.date}</span>
+              <span class="text-sm font-bold text-zinc-400 uppercase tracking-widest">{formatNewsDate(item.data.date)}</span>
               <div class="mt-2">
-                {item.data.tag && <span class="px-2 py-1 rounded-md bg-zinc-100 text-zinc-500 text-[10px] font-bold uppercase">{item.data.tag}</span>}
+                {(item.data.tag || item.data.tags[0]) && <span class="px-2 py-1 rounded-md bg-zinc-100 text-zinc-500 text-[10px] font-bold uppercase">{item.data.tag ?? item.data.tags[0]}</span>}
               </div>
             </div>
             <div class="flex-grow">
-              <h3 class="text-2xl font-bold mb-4">{item.data.title}</h3>
-              <p class="text-zinc-600 leading-relaxed text-lg">{item.body}</p>
+              <a href={newsHref(item.id)} class="group inline-block">
+                <h3 class="text-2xl font-bold mb-4 group-hover:text-zinc-600 transition-colors">{item.data.title}</h3>
+              </a>
+              <p class="text-zinc-600 leading-relaxed text-lg mb-5">{item.data.summary ?? item.body}</p>
+              <a href={newsHref(item.id)} class="inline-flex items-center text-sm font-bold text-zinc-900 hover:gap-2 transition-all">
+                Read more <ChevronRight size={16} className="ml-1" />
+              </a>
             </div>
           </div>
         ))}

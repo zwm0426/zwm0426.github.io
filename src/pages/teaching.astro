@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ArrowLeft } from 'lucide-react';
+import teachingData from '../data/teaching.json';
+
+type BadgeStyle = 'dark' | 'light';
+
+type Course = {
+  title: string;
+  institution?: string;
+  role?: string;
+  highlight?: {
+    badge: string;
+    style: BadgeStyle;
+    text: string;
+  };
+  description?: string;
+};
+
+type TeachingItem = {
+  label: string;
+  description: string;
+};
+
+type TeachingRecordCourse = {
+  code: string;
+  title: string;
+  note?: string;
+};
+
+type TeachingRecordTerm = {
+  term: string;
+  courses: TeachingRecordCourse[];
+};
+
+type TeachingSection = {
+  title: string;
+  intro?: string;
+  courses?: Course[];
+  items?: TeachingItem[];
+};
+
+type TeachingData = {
+  title: string;
+  subtitle: string;
+  image?: string;
+  imageAlt?: string;
+  overview: {
+    title: string;
+    paragraphs: string[];
+  };
+  institution: {
+    name: string;
+    intro: string;
+  };
+  sections: TeachingSection[];
+  mentorship: {
+    title: string;
+    intro: string;
+    items: TeachingItem[];
+  };
+  fullRecord: {
+    title: string;
+    terms: TeachingRecordTerm[];
+  };
+};
+
+const teaching = teachingData as TeachingData;
+
+const badgeClass = (style: BadgeStyle) =>
+  style === 'dark'
+    ? 'not-prose inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-zinc-900 text-white'
+    : 'not-prose inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-zinc-100 text-zinc-800 border border-zinc-200';
+---
+
+<BaseLayout title={teaching.title} description={teaching.subtitle}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href="/" class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to Home
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{teaching.title}</h1>
+        <p class="text-xl text-zinc-500 max-w-3xl">{teaching.subtitle}</p>
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      {teaching.image && (
+        <div class="aspect-[16/9] rounded-3xl overflow-hidden bg-zinc-100 border border-zinc-100 shadow-sm hover:shadow-xl transition-shadow duration-300 mb-16">
+          <img
+            src={teaching.image}
+            alt={teaching.imageAlt ?? teaching.title}
+            class="w-full h-full object-cover transition-transform duration-300 ease-out hover:scale-[1.01]"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+      )}
+
+      <div class="prose prose-zinc prose-lg max-w-none prose-headings:text-zinc-900 prose-headings:font-bold prose-p:text-zinc-600 prose-p:max-w-4xl prose-li:max-w-4xl prose-a:text-zinc-900 prose-a:font-bold prose-strong:text-zinc-900">
+        <h2>{teaching.overview.title}</h2>
+        {teaching.overview.paragraphs.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+
+        <h2>{teaching.institution.name}</h2>
+        <p>{teaching.institution.intro}</p>
+
+        {teaching.sections.map((section, sectionIndex) => (
+          <>
+            <h3>{section.title}</h3>
+            {section.intro && <p>{section.intro}</p>}
+
+            {section.courses?.map((course) => (
+              <>
+                <p><strong>{course.title}</strong></p>
+                <ul>
+                  {course.institution && (
+                    <li><strong>Institution:</strong> {course.institution}</li>
+                  )}
+                  {course.role && (
+                    <li><strong>Role:</strong> {course.role}</li>
+                  )}
+                  {course.highlight && (
+                    <li>
+                      <strong>Highlight:</strong> Rated <span class={badgeClass(course.highlight.style)}>{course.highlight.badge}</span> {course.highlight.text}
+                    </li>
+                  )}
+                  {course.description && (
+                    <li><strong>Description:</strong> {course.description}</li>
+                  )}
+                </ul>
+              </>
+            ))}
+
+            {section.items && (
+              <ul>
+                {section.items.map((item) => (
+                  <li><strong>{item.label}:</strong> {item.description}</li>
+                ))}
+              </ul>
+            )}
+
+            {sectionIndex < teaching.sections.length - 1 && <hr />}
+          </>
+        ))}
+
+        <hr />
+
+        <h2>{teaching.mentorship.title}</h2>
+        <p>{teaching.mentorship.intro}</p>
+        <ul>
+          {teaching.mentorship.items.map((item) => (
+            <li><strong>{item.label}</strong>: {item.description}</li>
+          ))}
+        </ul>
+
+        <hr />
+
+        <h2>{teaching.fullRecord.title}</h2>
+        <div class="not-prose space-y-8 mt-8">
+          {teaching.fullRecord.terms.map((term) => (
+            <div class="border-b border-zinc-100 pb-6 last:border-b-0">
+              <h3 class="text-xl font-bold text-zinc-900 mb-4">{term.term}</h3>
+              <div class="space-y-4">
+                {term.courses.map((course) => (
+                  <div>
+                    <p class="text-zinc-900 font-semibold">
+                      <span class="font-mono text-sm text-zinc-500">{course.code}</span>
+                      <span class="mx-2 text-zinc-300">-</span>
+                      {course.title}
+                    </p>
+                    {course.note && (
+                      <p class="text-sm text-zinc-500 mt-1">
+                        <span class="font-semibold text-zinc-700">Note:</span> {course.note}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

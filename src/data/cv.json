@@ -1,0 +1,119 @@
+{
+  "title": "Curriculum Vitae",
+  "subtitle": "Interdisciplinary researcher and engineer working across AI4Science, intelligent laboratory systems, XR, computer vision, and human-centred computing.",
+  "sections": [
+    {
+      "title": "Professional Experience",
+      "entries": [
+        {
+          "title": "Chief AI Architect",
+          "organization": "EC-ZERO Lab, Global Institute of Future Technology, Shanghai Jiao Tong University",
+          "period": "2026.06 – Present",
+          "items": [
+            {
+              "label": "AI4Science Architecture",
+              "description": "Designing AI-assisted research workflows for electrochemical systems, intelligent electrolysis, and green energy research."
+            },
+            {
+              "label": "Research Toolchains",
+              "description": "Building data, model, and knowledge-management workflows for scientific collaboration and laboratory operations."
+            },
+            {
+              "label": "Intelligent Laboratory Systems",
+              "description": "Leading LabOS concepts, experiment workflow support, asset tracking, and AI-assisted research infrastructure."
+            }
+          ]
+        },
+        {
+          "title": "Engineer / Director of XR Lab",
+          "organization": "Student Innovation Center, Shanghai Jiao Tong University",
+          "period": "2019.06 – 2025.04",
+          "items": [
+            {
+              "label": "Curriculum Design",
+              "description": "Co-chaired the SJTU AIGC Class and developed generative AI, XR, Python, computer vision, and engineering practice modules."
+            },
+            {
+              "label": "Lab Management",
+              "description": "Directed the XR Lab and supported equipment procurement, prototyping workflows, and student innovation training."
+            },
+            {
+              "label": "Student Mentorship",
+              "description": "Mentored 50+ student teams across courses, innovation programmes, and national competitions, supporting multiple award-winning interdisciplinary projects."
+            }
+          ]
+        },
+        {
+          "title": "Research Associate",
+          "organization": "Energy Research Institute @ NTU (ERI@N)",
+          "period": "2017.11 – 2018.06",
+          "items": [
+            {
+              "label": "3D Visualisation",
+              "description": "Worked on large-scale 3D city and LiDAR data visualisation systems."
+            },
+            {
+              "label": "System Design",
+              "description": "Designed and implemented interactive interfaces for energy research and data-driven visual analytics projects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "entries": [
+        {
+          "title": "Nanyang Technological University (NTU)",
+          "detail": "MSc in Digital Media Technology",
+          "location": "Singapore",
+          "period": "2017"
+        },
+        {
+          "title": "Northwest University",
+          "detail": "BSc in Computer Science and Technology",
+          "location": "Xi'an, China",
+          "period": "2016"
+        }
+      ]
+    },
+    {
+      "title": "Honors & Awards",
+      "items": [
+        {
+          "label": "Huawei Cloud and Computation Pioneer Teacher",
+          "description": "2021"
+        },
+        {
+          "label": "Excellent Staff Award",
+          "description": "Shanghai Jiao Tong University, 2020"
+        },
+        {
+          "label": "National Grand Prize",
+          "description": "University Blended Learning Innovation Competition, 2020"
+        }
+      ]
+    },
+    {
+      "title": "Technical Skills",
+      "items": [
+        {
+          "label": "AI & Research Computing",
+          "description": "Python, PyTorch, LLM workflows, computer vision, multimodal data processing."
+        },
+        {
+          "label": "Interactive Systems",
+          "description": "Unity, XR/AR prototyping, spatial computing, HCI systems."
+        },
+        {
+          "label": "Engineering Tools",
+          "description": "MATLAB, NI LabVIEW, Raspberry Pi, 3D LiDAR visualisation."
+        },
+        {
+          "label": "Languages",
+          "description": "Mandarin Chinese, English, and basic Japanese/Korean/German/French/Russian."
+        }
+      ]
+    }
+  ]
+}

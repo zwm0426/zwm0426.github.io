@@ -1,0 +1,23 @@
+{
+  "github": "https://github.com/zwm0426",
+  "linkedin": "https://www.linkedin.com/in/weiming-zhao-b884944a/",
+  "lab": "https://gift.sjtu.edu.cn/ec-zero",
+  "publications": "/publications",
+  "email": {
+    "user": "weiming.zhao",
+    "domain": "sjtu.edu.cn"
+  },
+  "hero": [
+    {
+      "label": "View CV",
+      "href": "/cv",
+      "variant": "primary"
+    },
+    {
+      "label": "Visit EC-ZERO Lab",
+      "hrefKey": "lab",
+      "variant": "secondary",
+      "external": true
+    }
+  ]
+}

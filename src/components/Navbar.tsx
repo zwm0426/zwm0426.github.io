@@ -1,10 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Code, X } from 'lucide-react'; // 引入 X 图标作为关闭按钮
+import { Code, X } from 'lucide-react';
 
-const Navbar = () => {
+type NavigationItem = {
+  label: string;
+  href: string;
+  type?: 'route' | 'hash';
+};
+
+type NavbarProps = {
+  navigation: NavigationItem[];
+  brand: string;
+};
+
+const normalizePath = (path: string) => {
+  if (path.length <= 1) return path;
+  return path.replace(/\/$/, '');
+};
+
+const Navbar = ({ navigation, brand }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentPath, setCurrentPath] = useState('');
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // 👉 第一步：新增控制状态
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
@@ -15,20 +31,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 当路径改变时自动关闭菜单
   useEffect(() => {
     setIsMenuOpen(false);
   }, [currentPath]);
-
-  const navLinks = [
-    { name: 'Home', href: '/', type: 'route' },
-    { name: 'About', href: '/#about', type: 'hash' },
-    { name: 'News', href: '/news', type: 'route' },
-    { name: 'Projects', href: '/projects', type: 'route' },
-    { name: 'Teaching', href: '/teaching', type: 'route' },
-    { name: 'Publications', href: '/publications', type: 'route' },
-    { name: 'CV', href: '/cv', type: 'route' },
-  ];
 
   const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('/#')) {
@@ -43,6 +48,13 @@ const Navbar = () => {
     }
   };
 
+  const isRouteActive = (href: string) => {
+    if (href.includes('#')) return false;
+    return normalizePath(currentPath) === normalizePath(href);
+  };
+
+  const getLinkType = (link: NavigationItem) => link.type ?? (link.href.includes('#') ? 'hash' : 'route');
+
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -50,36 +62,34 @@ const Navbar = () => {
       }`}>
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <a href="/" className="text-xl font-semibold tracking-tight text-zinc-900">
-            Kevin Zhao
+            {brand}
           </a>
           
-          {/* Desktop Menu - 保持不变 */}
           <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              link.type === 'route' ? (
+            {navigation.map((link) => (
+              getLinkType(link) === 'route' ? (
                 <a
-                  key={link.name}
+                  key={link.label}
                   href={link.href}
                   className={`text-sm font-medium transition-colors ${
-                    currentPath === link.href ? 'text-zinc-900' : 'text-zinc-600 hover:text-zinc-900'
+                    isRouteActive(link.href) ? 'text-zinc-900' : 'text-zinc-600 hover:text-zinc-900'
                   }`}
                 >
-                  {link.name}
+                  {link.label}
                 </a>
               ) : (
                 <a
-                  key={link.name}
+                  key={link.label}
                   href={link.href}
                   onClick={(e) => handleHashClick(e, link.href)}
                   className="text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
                 >
-                  {link.name}
+                  {link.label}
                 </a>
               )
             ))}
           </div>
 
-          {/* Mobile Menu Button - 👉 第二步：绑定点击事件 */}
           <div className="md:hidden">
              <button 
                onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -90,25 +100,23 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Overlay - 👉 第三步：渲染折叠菜单 */}
-        {/* 关键修改：将 bg-white 改为 bg-white/80，并添加 backdrop-blur-md */}
         <div className={`md:hidden absolute top-full left-0 right-0 bg-white/80 backdrop-blur-md border-b border-zinc-200 transition-all duration-300 origin-top ${
           isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
         }`}>
           <div className="px-6 py-8 flex flex-col space-y-6">
-            {navLinks.map((link) => (
+            {navigation.map((link) => (
               <a
-                key={link.name}
+                key={link.label}
                 href={link.href}
                 onClick={(e) => {
-                  if (link.type === 'hash') handleHashClick(e, link.href);
-                  setIsMenuOpen(false); // 点击后自动关闭
+                  if (getLinkType(link) === 'hash') handleHashClick(e, link.href);
+                  setIsMenuOpen(false);
                 }}
                 className={`text-lg font-medium ${
-                  currentPath === link.href ? 'text-zinc-900' : 'text-zinc-600'
+                  isRouteActive(link.href) ? 'text-zinc-900' : 'text-zinc-600'
                 }`}
               >
-                {link.name}
+                {link.label}
               </a>
             ))}
           </div>

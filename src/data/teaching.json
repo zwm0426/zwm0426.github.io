@@ -1,0 +1,298 @@
+{
+  "title": "Teaching",
+  "subtitle": "Empowering the next generation of engineers in XR, AI, and human-centred computing.",
+  "image": "/images/teaching.webp",
+  "imageAlt": "Teaching and academic work",
+  "overview": {
+    "title": "Overview / Teaching philosophy",
+    "paragraphs": [
+      "My teaching experience at Shanghai Jiao Tong University spans XR/AR development, artificial intelligence, computer vision, data science, Python programming, MATLAB, LabVIEW, Raspberry Pi, and engineering practice modules."
+    ]
+  },
+  "institution": {
+    "name": "Shanghai Jiao Tong University",
+    "intro": "At the SJTU Student Innovation Center, I led and supported curriculum development for engineering and technology electives, with a focus on hands-on learning, interdisciplinary prototyping, and practical research skills."
+  },
+  "sections": [
+    {
+      "title": "Selected / Core Courses",
+      "courses": [
+        {
+          "title": "CS1107 - VR/AR Design and Development Practice",
+          "role": "Lead Instructor (2021-2025)",
+          "highlight": {
+            "badge": "5.0 / 5.0",
+            "style": "dark",
+            "text": "by students. Top 5%, A0-rated course in SJTU."
+          },
+          "description": "Undergraduate elective focusing on Unity, C#, spatial computing, and immersive interaction design."
+        },
+        {
+          "title": "CS1108 - Introduction to Data Science - The Way of Python",
+          "role": "Co-Instructor / Module Lead (2023-2025)",
+          "highlight": {
+            "badge": "4.5 / 5.0",
+            "style": "light",
+            "text": "by students. Top 15%, A2-rated course in SJTU."
+          },
+          "description": "Introduction to Python, data processing, applied data science, and AI practice."
+        },
+        {
+          "title": "AI1113 - Artificial Intelligence: Fundamentals and Practice",
+          "role": "Module Lead (2025)",
+          "description": "Applied artificial intelligence fundamentals and practice-oriented modules for undergraduate learners."
+        }
+      ]
+    },
+    {
+      "title": "Engineering Practice Modules",
+      "intro": "From 2019 to 2023, I designed and delivered specialised technical modules for the SI1210: Engineer Practicing, AI001, and ME901 series, training hundreds of students from non-programming backgrounds in applied technologies:",
+      "items": [
+        {
+          "label": "Computer Vision",
+          "description": "OpenCV integration for AI interaction."
+        },
+        {
+          "label": "Hardware Control",
+          "description": "Raspberry Pi and NI LabVIEW."
+        },
+        {
+          "label": "Data Analysis",
+          "description": "MATLAB-based engineering practice."
+        }
+      ]
+    },
+    {
+      "title": "Guest Lectures",
+      "courses": [
+        {
+          "title": "ME3500J - Design & Manufacturing II (2025 Summer)",
+          "institution": "UMich-SJTU Joint Institute",
+          "role": "Guest Instructor for Mechatronics Lab."
+        }
+      ]
+    }
+  ],
+  "mentorship": {
+    "title": "Student Mentorship",
+    "intro": "Beyond formal lectures, I have mentored student teams in innovation courses, interdisciplinary prototyping, and national competition contexts, focusing on the application of AI and XR in real engineering problems.",
+    "items": [
+      {
+        "label": "Excellent Mentor Award",
+        "description": "SJTU Student Innovation Center, 2024."
+      },
+      {
+        "label": "Impact",
+        "description": "Mentored 50+ student teams across courses, innovation programmes, and national competitions, supporting multiple award-winning interdisciplinary projects."
+      }
+    ]
+  },
+  "fullRecord": {
+    "title": "Full Teaching Record",
+    "terms": [
+      {
+        "term": "2025 Fall",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR Design and Development Practice"
+          },
+          {
+            "code": "AI1113",
+            "title": "Artificial Intelligence: Fundamentals and Practice"
+          }
+        ]
+      },
+      {
+        "term": "2025 Summer",
+        "courses": [
+          {
+            "code": "ME3500J",
+            "title": "Design & Manufacturing II",
+            "note": "Guest instructor for Mechatronics Lab, UMich-SJTU Joint Institute"
+          }
+        ]
+      },
+      {
+        "term": "2025 Spring",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR Design and Development Practice"
+          },
+          {
+            "code": "CS1108",
+            "title": "Introduction to Data Science - The Way of Python",
+            "note": "Main instructor: Mr. Tongxin REN"
+          }
+        ]
+      },
+      {
+        "term": "2024 Spring",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR Design and Development Practice",
+            "note": "Rated 5.0/5.0 by students"
+          }
+        ]
+      },
+      {
+        "term": "2023 Fall",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR Design and Development Practice",
+            "note": "Top 5%, A0-rated course in SJTU; rated 5.0/5.0 by students"
+          },
+          {
+            "code": "CS1108",
+            "title": "Introduction to Data Science - The Way of Python",
+            "note": "Top 15%, A2-rated course in SJTU; rated 4.5/5.0 by students"
+          },
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          }
+        ]
+      },
+      {
+        "term": "2023 Summer",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          }
+        ]
+      },
+      {
+        "term": "2023 Spring",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR Design and Development Practice",
+            "note": "A2-rated course in SJTU"
+          }
+        ]
+      },
+      {
+        "term": "2022 Fall",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          },
+          {
+            "code": "CS175",
+            "title": "Developing Android Applications: Introduction to Java Programming Language"
+          }
+        ]
+      },
+      {
+        "term": "2022 Spring",
+        "courses": [
+          {
+            "code": "CS085",
+            "title": "VR/AR Design and Development Practice"
+          },
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          },
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of NI LabVIEW"
+          }
+        ]
+      },
+      {
+        "term": "2021 Fall",
+        "courses": [
+          {
+            "code": "CS085",
+            "title": "VR/AR Design and Development Practice"
+          }
+        ]
+      },
+      {
+        "term": "2021 Summer",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          }
+        ]
+      },
+      {
+        "term": "2021 Spring",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "Artificial Intelligence Interaction Technology: Module of OpenCV"
+          },
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of Raspberry Pi"
+          },
+          {
+            "code": "ME901",
+            "title": "Engineering Practice Exploration and Research: Module of OpenCV"
+          }
+        ]
+      },
+      {
+        "term": "2020 Fall",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          }
+        ]
+      },
+      {
+        "term": "2020 Summer",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "Artificial Intelligence Interaction Technology: Module of OpenCV"
+          },
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of MATLAB"
+          }
+        ]
+      },
+      {
+        "term": "2020 Spring",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of NI LabVIEW"
+          },
+          {
+            "code": "AI001",
+            "title": "Artificial Intelligence Interaction Technology: Module of OpenCV"
+          }
+        ]
+      },
+      {
+        "term": "2019 Fall",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "Engineer Practicing: Module of NI LabVIEW"
+          }
+        ]
+      },
+      {
+        "term": "2019 Summer",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "Artificial Intelligence Interaction Technology: Module of OpenCV"
+          }
+        ]
+      }
+    ]
+  }
+}

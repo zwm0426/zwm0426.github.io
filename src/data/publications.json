@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Revealing Directions for Text-guided 3D Face Editing",
+    "authors": ["Zhuo Chen", "Yichao Yan", "Shengqi Liu", "Yuhao Cheng", "Weiming Zhao", "Lincheng Li"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "IEEE Transactions on Multimedia",
+    "year": 2025,
+    "type": "Journal",
+    "links": [
+      {
+        "label": "IEEE Xplore",
+        "href": "https://ieeexplore.ieee.org/document/11177229/"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Towards High-fidelity 3D Talking Avatar with Personalized Dynamic Texture",
+    "authors": ["Xuanchen Li", "Jianyu Wang", "Yuhao Cheng", "Yikun Zeng", "Xingyu Ren", "Wenhan Zhu", "Weiming Zhao", "Yichao Yan"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "Computer Vision and Pattern Recognition (CVPR)",
+    "year": 2025,
+    "type": "Conference",
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2503.00495"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "IPAD: Industrial Process Anomaly Detection Dataset",
+    "authors": ["Jinfan Liu", "Yichao Yan", "Junjie Li", "Weiming Zhao", "Pengzhi Chu", "Xingdong Sheng", "Yunhui Liu", "Xiaokang Yang"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "year": 2024,
+    "type": "Journal",
+    "links": [
+      {
+        "label": "IEEE Xplore",
+        "href": "https://ieeexplore.ieee.org/document/10685491"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2404.15033"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Infusion: Preventing Customized Text-to-Image Diffusion from Overfitting",
+    "authors": ["Weili Zeng", "Yichao Yan", "Qi Zhu", "Zhuo Chen", "Pengzhi Chu", "Weiming Zhao", "Xiaokang Yang"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "ACM Multimedia (MM '24)",
+    "year": 2024,
+    "type": "Conference",
+    "links": [
+      {
+        "label": "Project Page",
+        "href": "https://zwl666666.github.io/infusion/"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/zwl666666/infusion"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2404.14007"
+      },
+      {
+        "label": "DOI",
+        "href": "https://doi.org/10.1145/3664647.3680894"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "The Design of Autonomous Driving Experimental Platform Based on the Huawei Cloud Model Arts and HiLens",
+    "authors": ["Pengzhi Chu", "Bo Xu", "Xiongziyan Xiao", "Weiming Zhao", "Wankun Xue"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "Drive System Technique",
+    "year": 2022,
+    "type": "Article",
+    "links": [
+      {
+        "label": "PDF",
+        "href": "/files/基于华为云ModelArts及HiLens自动驾驶实验平台的设计.pdf"
+      }
+    ],
+    "selected": false
+  },
+  {
+    "title": "Course Design of 'The Basic MATLAB Practice' for Non-Computer-Science Students",
+    "authors": ["Weiming Zhao", "Wankun Xue"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "Contemporary Education Research and Teaching Practice",
+    "year": 2021,
+    "type": "Article",
+    "links": [
+      {
+        "label": "PDF",
+        "href": "/files/针对非计算机专业学生的《MATLAB实践》课程设计.pdf"
+      }
+    ],
+    "selected": false
+  },
+  {
+    "title": "Intelligent Interaction Course Construction facing Non-Programming Students Based on Raspberry Pi",
+    "authors": ["Wankun Xue", "Weiming Zhao"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "Contemporary Education Research and Teaching Practice",
+    "year": 2021,
+    "type": "Article",
+    "links": [
+      {
+        "label": "PDF",
+        "href": "/files/基于树莓派的面向无编程基础学生的智能交互实践性课程建设.pdf"
+      }
+    ],
+    "selected": false
+  },
+  {
+    "title": "Calibration Method of Three-Dimensional Point Cloud Acquisition System",
+    "authors": ["Weiming Zhao"],
+    "highlightedAuthors": ["Weiming Zhao"],
+    "venue": "China National Intellectual Property Administration (Patent: CN110196031B)",
+    "year": 2020,
+    "type": "Patent",
+    "links": [
+      {
+        "label": "Google Patent",
+        "href": "https://patents.google.com/patent/CN110196031B/en"
+      },
+      {
+        "label": "PDF",
+        "href": "/files/CN110196031B.pdf"
+      }
+    ],
+    "selected": false
+  }
+]

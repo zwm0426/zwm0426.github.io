@@ -1,0 +1,31 @@
+[
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "About",
+    "href": "/#about",
+    "type": "hash"
+  },
+  {
+    "label": "News",
+    "href": "/news"
+  },
+  {
+    "label": "Projects",
+    "href": "/projects"
+  },
+  {
+    "label": "Teaching",
+    "href": "/teaching"
+  },
+  {
+    "label": "Publications",
+    "href": "/publications"
+  },
+  {
+    "label": "CV",
+    "href": "/cv"
+  }
+]

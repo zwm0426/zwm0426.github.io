@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { ArrowLeft } from 'lucide-react';
+
+interface Props {
+  entry: CollectionEntry<'news'>;
+}
+
+export async function getStaticPaths() {
+  const entries = await getCollection('news');
+
+  return entries
+    .filter((entry) => !entry.data.draft)
+    .map((entry) => ({
+      params: {
+        slug: entry.id.replace(/\.mdx?$/, '').replace(/\/index$/, ''),
+      },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const formatNewsDate = (date: Date) => new Intl.DateTimeFormat('en', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+}).format(date);
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.summary}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href="/news" class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> Back to News
+        </a>
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="text-xs font-bold text-zinc-400 uppercase tracking-widest">{formatNewsDate(entry.data.date)}</span>
+          {entry.data.tags.map((tag) => (
+            <span class="px-2 py-1 rounded-md bg-zinc-100 text-zinc-500 text-[10px] font-bold uppercase">{tag}</span>
+          ))}
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{entry.data.title}</h1>
+        {entry.data.summary && <p class="text-xl text-zinc-500 max-w-3xl">{entry.data.summary}</p>}
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <article class="prose prose-zinc prose-lg max-w-4xl prose-headings:text-zinc-900 prose-headings:font-bold prose-p:text-zinc-600 prose-a:text-zinc-900 prose-a:font-bold prose-strong:text-zinc-900">
+        <Content />
+      </article>
+    </div>
+  </div>
+</BaseLayout>
