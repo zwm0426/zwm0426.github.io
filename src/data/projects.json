@@ -1,31 +1,31 @@
 [
-  {
-    "title": "LabOS: Intelligent Laboratory Operating System",
-    "period": "2026–present",
-    "role": "Lead Architect",
-    "summary": "A research toolchain and laboratory platform for experiment workflows, asset tracking, knowledge management, and AI-assisted scientific discovery.",
-    "tags": ["AI4Science", "LabOS", "Research Toolchains", "Intelligent Laboratory"],
-    "image": "",
-    "links": []
-  },
-  {
-    "title": "AI-Assisted Electrochemical Research Platform",
-    "period": "2026–present",
-    "role": "Chief AI Architect",
-    "summary": "Exploring the integration of machine learning, multimodal research data, and electrochemical knowledge for intelligent electrolysis, green energy research, and AI4Science workflows.",
-    "tags": ["AI4Science", "Electrochemistry", "Green Energy", "Machine Learning"],
-    "image": "",
-    "links": []
-  },
-  {
-    "title": "SonicBalance: Auditory Feedback for Accessible Photography",
-    "period": "2025–2026",
-    "role": "Researcher",
-    "summary": "An accessibility-focused HCI project exploring auditory feedback mechanisms to support blind and low-vision users in photographic composition and balance.",
-    "tags": ["HCI", "Accessibility", "Auditory Feedback", "Photography"],
-    "image": "",
-    "links": []
-  },
+  // {
+  //   "title": "LabOS: Intelligent Laboratory Operating System",
+  //   "period": "2026–present",
+  //   "role": "Lead Architect",
+  //   "summary": "A research toolchain and laboratory platform for experiment workflows, asset tracking, knowledge management, and AI-assisted scientific discovery.",
+  //   "tags": ["AI4Science", "LabOS", "Research Toolchains", "Intelligent Laboratory"],
+  //   "image": "",
+  //   "links": []
+  // },
+  // {
+  //   "title": "AI-Assisted Electrochemical Research Platform",
+  //   "period": "2026–present",
+  //   "role": "Chief AI Architect",
+  //   "summary": "Exploring the integration of machine learning, multimodal research data, and electrochemical knowledge for intelligent electrolysis, green energy research, and AI4Science workflows.",
+  //   "tags": ["AI4Science", "Electrochemistry", "Green Energy", "Machine Learning"],
+  //   "image": "",
+  //   "links": []
+  // },
+  // {
+  //   "title": "SonicBalance: Auditory Feedback for Accessible Photography",
+  //   "period": "2025–2026",
+  //   "role": "Researcher",
+  //   "summary": "An accessibility-focused HCI project exploring auditory feedback mechanisms to support blind and low-vision users in photographic composition and balance.",
+  //   "tags": ["HCI", "Accessibility", "Auditory Feedback", "Photography"],
+  //   "image": "",
+  //   "links": []
+  // },
   {
     "title": "AI and AIGC Teaching Toolchains",
     "period": "2023–2025",
