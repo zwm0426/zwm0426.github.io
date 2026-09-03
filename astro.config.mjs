@@ -5,6 +5,15 @@ import tailwind from '@astrojs/tailwind'; // 👉 关键修改 1：换成了 Ast
 // https://astro.build/config
 export default defineConfig({
   site: 'https://zwm0426.github.io', 
+
+  i18n: {
+    locales: ['en', 'zh'],
+    defaultLocale: 'en',
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: false,
+    },
+  },
   
   // 👉 关键修改 2：把 tailwind 放进 Astro 的 integrations（整合）数组里
   integrations: [

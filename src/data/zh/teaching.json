@@ -1,0 +1,301 @@
+{
+  "title": "教学",
+  "subtitle": "在扩展现实、人工智能与以人为本计算领域培养新一代工程人才。",
+  "image": "/images/teaching.webp",
+  "imageAlt": "教学与学术工作",
+  "overview": {
+    "title": "概览／教学理念",
+    "paragraphs": [
+      "我在上海交通大学的教学工作涵盖 XR/AR 开发、人工智能、计算机视觉、数据科学、Python 编程、MATLAB、LabVIEW、Raspberry Pi 与工程实践模块。"
+    ]
+  },
+  "institution": {
+    "name": "上海交通大学",
+    "intro": "在上海交通大学学生创新中心工作期间，我负责并参与工程与技术类选修课程建设，注重动手实践、跨学科原型开发与科研实践能力培养。"
+  },
+  "sections": [
+    {
+      "title": "精选／核心课程",
+      "courses": [
+        {
+          "title": "CS1107 - VR/AR 设计与开发实践",
+          "role": "课程负责人（2021–2025）",
+          "highlight": {
+            "badge": "5.0 / 5.0",
+            "style": "dark",
+            "text": "；课程位列上海交通大学前 5%，获评 A0。"
+          },
+          "description": "面向本科生的选修课程，聚焦 Unity、C#、空间计算与沉浸式交互设计。"
+        },
+        {
+          "title": "CS1108 - 数据科学导论——Python 之道",
+          "role": "联合授课教师／模块负责人（2023–2025）",
+          "highlight": {
+            "badge": "4.5 / 5.0",
+            "style": "light",
+            "text": "；课程位列上海交通大学前 15%，获评 A2。"
+          },
+          "description": "介绍 Python、数据处理、应用数据科学与人工智能实践。"
+        },
+        {
+          "title": "AI1113 - 人工智能：基础与实践",
+          "role": "模块负责人（2025）",
+          "highlight": {
+            "text": "课程位列上海交通大学前 10%，获评 A1。"
+          },
+          "description": "面向本科生讲授人工智能基础，并设置注重实践应用的课程模块。"
+        }
+      ]
+    },
+    {
+      "title": "工程实践模块",
+      "intro": "2019 至 2023 年间，我为 SI1210 工程实践、AI001 与 ME901 系列课程设计并讲授专业技术模块，帮助数百名没有编程基础的学生学习应用技术：",
+      "items": [
+        {
+          "label": "计算机视觉",
+          "description": "面向人工智能交互的 OpenCV 集成应用。"
+        },
+        {
+          "label": "硬件控制",
+          "description": "Raspberry Pi 与 NI LabVIEW。"
+        },
+        {
+          "label": "数据分析",
+          "description": "基于 MATLAB 的工程实践。"
+        }
+      ]
+    },
+    {
+      "title": "客座授课",
+      "courses": [
+        {
+          "title": "ME3500J - 设计与制造 II（2025 夏季）",
+          "institution": "上海交大密西根学院",
+          "role": "机电实验客座教师"
+        }
+      ]
+    }
+  ],
+  "mentorship": {
+    "title": "学生指导",
+    "intro": "除正式课程外，我还在创新课程、跨学科原型开发与全国性竞赛中指导学生团队，重点推动人工智能和扩展现实技术解决真实工程问题。",
+    "items": [
+      {
+        "label": "优秀指导教师奖",
+        "description": "上海交通大学学生创新中心，2024。"
+      },
+      {
+        "label": "指导成果",
+        "description": "在课程、创新项目与全国性竞赛中指导 50 余支学生团队，支持多个跨学科项目获奖。"
+      }
+    ]
+  },
+  "fullRecord": {
+    "title": "完整教学记录",
+    "terms": [
+      {
+        "term": "2025 秋季",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR 设计与开发实践"
+          },
+          {
+            "code": "AI1113",
+            "title": "人工智能：基础与实践"
+          }
+        ]
+      },
+      {
+        "term": "2025 夏季",
+        "courses": [
+          {
+            "code": "ME3500J",
+            "title": "设计与制造 II",
+            "note": "上海交大密西根学院机电实验客座教师"
+          }
+        ]
+      },
+      {
+        "term": "2025 春季",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR 设计与开发实践"
+          },
+          {
+            "code": "CS1108",
+            "title": "数据科学导论——Python 之道",
+            "note": "课程主讲教师：任同心老师"
+          }
+        ]
+      },
+      {
+        "term": "2024 春季",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR 设计与开发实践",
+            "note": "学生评分 5.0/5.0"
+          }
+        ]
+      },
+      {
+        "term": "2023 秋季",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR 设计与开发实践",
+            "note": "课程位列上海交通大学前 5%，获评 A0；学生评分 5.0/5.0"
+          },
+          {
+            "code": "CS1108",
+            "title": "数据科学导论——Python 之道",
+            "note": "课程位列上海交通大学前 15%，获评 A2；学生评分 4.5/5.0"
+          },
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          }
+        ]
+      },
+      {
+        "term": "2023 夏季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          }
+        ]
+      },
+      {
+        "term": "2023 春季",
+        "courses": [
+          {
+            "code": "CS1107",
+            "title": "VR/AR 设计与开发实践",
+            "note": "获评上海交通大学 A2 课程"
+          }
+        ]
+      },
+      {
+        "term": "2022 秋季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          },
+          {
+            "code": "CS175",
+            "title": "Android 应用开发：Java 编程语言导论"
+          }
+        ]
+      },
+      {
+        "term": "2022 春季",
+        "courses": [
+          {
+            "code": "CS085",
+            "title": "VR/AR 设计与开发实践"
+          },
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          },
+          {
+            "code": "SI1210",
+            "title": "工程实践：NI LabVIEW 模块"
+          }
+        ]
+      },
+      {
+        "term": "2021 秋季",
+        "courses": [
+          {
+            "code": "CS085",
+            "title": "VR/AR 设计与开发实践"
+          }
+        ]
+      },
+      {
+        "term": "2021 夏季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          }
+        ]
+      },
+      {
+        "term": "2021 春季",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "人工智能交互技术：OpenCV 模块"
+          },
+          {
+            "code": "SI1210",
+            "title": "工程实践：Raspberry Pi 模块"
+          },
+          {
+            "code": "ME901",
+            "title": "工程实践探索与研究：OpenCV 模块"
+          }
+        ]
+      },
+      {
+        "term": "2020 秋季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          }
+        ]
+      },
+      {
+        "term": "2020 夏季",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "人工智能交互技术：OpenCV 模块"
+          },
+          {
+            "code": "SI1210",
+            "title": "工程实践：MATLAB 模块"
+          }
+        ]
+      },
+      {
+        "term": "2020 春季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：NI LabVIEW 模块"
+          },
+          {
+            "code": "AI001",
+            "title": "人工智能交互技术：OpenCV 模块"
+          }
+        ]
+      },
+      {
+        "term": "2019 秋季",
+        "courses": [
+          {
+            "code": "SI1210",
+            "title": "工程实践：NI LabVIEW 模块"
+          }
+        ]
+      },
+      {
+        "term": "2019 夏季",
+        "courses": [
+          {
+            "code": "AI001",
+            "title": "人工智能交互技术：OpenCV 模块"
+          }
+        ]
+      }
+    ]
+  }
+}

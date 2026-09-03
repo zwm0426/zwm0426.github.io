@@ -1,0 +1,51 @@
+{
+  "name": "赵伟明",
+  "shortName": "赵伟明",
+  "chineseName": "赵伟明",
+  "title": "首席人工智能架构师",
+  "affiliation": "上海交通大学未来技术学院 EC-ZERO 实验室",
+  "location": "中国上海",
+  "avatar": "/images/kevinzhao_avatar-1.webp",
+  "avatarObjectPosition": "30% 23%",
+  "bio": "我现任上海交通大学未来技术学院 EC-ZERO 实验室首席人工智能架构师，研究与实践方向涵盖 AI4Science、智能实验室系统、扩展现实、计算机视觉与以人为本计算。",
+  "heroLabel": "上海交通大学 EC-ZERO 实验室｜首席人工智能架构师",
+  "heroPrefix": "你好，我是",
+  "heroHighlight": "赵伟明",
+  "keywords": [
+    "AI4Science",
+    "以人为本计算",
+    "计算机视觉",
+    "扩展现实",
+    "科研工具链",
+    "智能实验室"
+  ],
+  "about": {
+    "image": "/images/about6.webp",
+    "imageAlt": "赵伟明",
+    "paragraphs": [
+      "我现任上海交通大学未来技术学院 EC-ZERO 实验室首席人工智能架构师，主要面向电化学研究、智慧实验室与工程实践，构建人工智能驱动的科研工具链和智能实验室基础设施。我尤其关注生成式人工智能、计算机视觉、以人为本计算与扩展现实如何支持科学发现和下一代科研工作流。",
+      "加入 EC-ZERO 实验室之前，我曾任上海交通大学学生创新中心教育工程师及扩展现实实验室主任，负责人工智能与扩展现实课程建设和学生创新培养。我也曾在新加坡南洋理工大学能源研究院（ERI@N）担任研究助理，从事三维激光雷达可视化与图形界面设计。",
+      "我拥有新加坡南洋理工大学数字媒体技术硕士学位，以及西北大学计算机科学与技术学士学位。"
+    ],
+    "highlights": [
+      {
+        "label": "AI4Science",
+        "icon": "code"
+      },
+      {
+        "label": "科研工具链",
+        "icon": "users"
+      },
+      {
+        "label": "智能实验室",
+        "icon": "graduation-cap"
+      },
+      {
+        "label": "上海交通大学",
+        "icon": "map-pin"
+      }
+    ],
+    "focusLabel": "当前方向",
+    "currentFocus": "为智慧电化学实验室构建人工智能驱动的科研工具链。"
+  }
+}

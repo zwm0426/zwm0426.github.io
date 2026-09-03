@@ -22,6 +22,7 @@ type Profile = {
 
 type AboutProps = {
   profile: Profile;
+  heading: string;
 };
 
 const iconMap: Record<AboutIcon, LucideIcon> = {
@@ -61,7 +62,7 @@ const SectionHeading = ({ children, subtitle }: { children: React.ReactNode; sub
   </div>
 );
 
-const About = ({ profile }: AboutProps) => {
+const About = ({ profile, heading }: AboutProps) => {
   const about = profile.about;
 
   return (
@@ -73,7 +74,7 @@ const About = ({ profile }: AboutProps) => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <SectionHeading>About Me</SectionHeading>
+            <SectionHeading>{heading}</SectionHeading>
             <div className="space-y-6 text-zinc-600 leading-relaxed">
               {about.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>

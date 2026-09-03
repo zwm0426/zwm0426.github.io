@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ArrowLeft } from 'lucide-react';
+import publicationsData from '../../data/publications.json';
+import { ui } from '../../i18n/ui';
+import { getLocaleStaticPaths, withLocalePath, type Locale } from '../../i18n/routing';
+
+type Publication = {
+  title: string;
+  authors: string[];
+  highlightedAuthors?: string[];
+  venue: string;
+  year: number;
+  type?: string;
+  links: { label: string; href: string }[];
+  selected?: boolean;
+};
+
+type PublicationGroup = {
+  year: number;
+  items: Publication[];
+};
+
+export const getStaticPaths = getLocaleStaticPaths;
+
+const { locale } = Astro.props as { locale: Locale };
+const copy = ui[locale];
+const publicationList = publicationsData as Publication[];
+const publications = Object.values(
+  publicationList.reduce<Record<number, PublicationGroup>>((groups, publication) => {
+    groups[publication.year] ??= { year: publication.year, items: [] };
+    groups[publication.year].items.push(publication);
+    return groups;
+  }, {})
+).sort((a, b) => b.year - a.year);
+
+const isHighlightedAuthor = (publication: Publication, author: string) =>
+  publication.highlightedAuthors?.includes(author) ?? false;
+
+const publicationCountLabel = (count: number) =>
+  locale === 'zh'
+    ? `${count} ${copy.publications.paperPlural}`
+    : `${count} ${count === 1 ? copy.publications.paperSingular : copy.publications.paperPlural}`;
+---
+
+<BaseLayout locale={locale} title={copy.publications.title} description={copy.publications.description}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href={withLocalePath('/', locale)} class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> {copy.backHome}
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{copy.publications.title}</h1>
+        <p class="text-xl text-zinc-500 max-w-3xl">{copy.publications.description}</p>
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <div class="space-y-20">
+        {publications.map((group) => (
+          <div>
+            <h2 class="text-2xl font-bold text-zinc-900 mb-10 sticky top-24 bg-white/80 backdrop-blur-sm z-10 py-2 border-b border-zinc-100 flex items-baseline gap-4">
+              {group.year}
+              <span class="text-sm font-normal text-zinc-400 font-mono tracking-tighter">/ {publicationCountLabel(group.items.length)}</span>
+            </h2>
+            <div class="space-y-12">
+              {group.items.map((publication) => (
+                <div class="group relative pl-0 md:pl-8 border-l-0 md:border-l border-zinc-100 hover:border-zinc-900 transition-colors">
+                  <h3 class="text-xl font-bold text-zinc-900 group-hover:text-zinc-600 transition-colors mb-3 leading-tight">{publication.title}</h3>
+                  <p class="text-zinc-500 text-sm mb-3">
+                    {publication.authors.map((author, index) => (
+                      <span>
+                        {isHighlightedAuthor(publication, author) ? <span class="font-bold text-zinc-900">{author}</span> : author}
+                        {index < publication.authors.length - 1 ? ', ' : ''}
+                      </span>
+                    ))}
+                  </p>
+                  <p class="text-zinc-400 text-xs uppercase tracking-widest italic font-medium">{publication.venue}</p>
+                  <div class="flex flex-wrap gap-3 mt-5">
+                    {publication.links.map((link) => (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="px-3 py-1 text-[10px] font-bold uppercase tracking-tighter text-zinc-500 border border-zinc-200 rounded-full hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-all"
+                      >
+                        [{link.label}]
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

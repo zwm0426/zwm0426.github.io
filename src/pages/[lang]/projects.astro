@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import projectsEn from '../../data/projects.json';
+import projectsZh from '../../data/zh/projects.json';
+import { ui } from '../../i18n/ui';
+import { getLocaleStaticPaths, withLocalePath, type Locale } from '../../i18n/routing';
+
+type Project = {
+  title: string;
+  period?: string;
+  role?: string;
+  summary: string;
+  tags: string[];
+  image?: string;
+  imageAlt?: string;
+  links?: {
+    label: string;
+    href: string;
+  }[];
+};
+
+export const getStaticPaths = getLocaleStaticPaths;
+
+const { locale } = Astro.props as { locale: Locale };
+const copy = ui[locale];
+const projects = (locale === 'zh' ? projectsZh : projectsEn) as Project[];
+---
+
+<BaseLayout locale={locale} title={copy.projects.title} description={copy.projects.description}>
+  <div class="pt-32 pb-24 px-6 min-h-screen bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <a href={withLocalePath('/', locale)} class="inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-8 group">
+          <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" /> {copy.backHome}
+        </a>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">{copy.projects.title}</h1>
+        <p class="text-xl text-zinc-500 max-w-3xl">{copy.projects.description}</p>
+        <div class="h-1 bg-zinc-900 w-20 mt-8" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {projects.map((project) => (
+          <div class="group bg-white p-8 rounded-3xl border border-zinc-100 shadow-sm hover:shadow-xl transition-all duration-300">
+            {project.image && (
+              <div class="aspect-video rounded-3xl overflow-hidden bg-zinc-100 border border-zinc-100 shadow-sm group-hover:shadow-xl transition-shadow duration-300 mb-6 relative">
+                <img
+                  src={project.image}
+                  alt={project.imageAlt ?? project.title}
+                  class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.01]"
+                  referrerPolicy="no-referrer"
+                />
+                {project.links?.[0] && (
+                  <div class="absolute top-4 right-4">
+                    <a
+                      href={project.links[0].href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={project.links[0].label}
+                      class="w-10 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-zinc-900 shadow-lg"
+                    >
+                      <ExternalLink size={18} className="" />
+                    </a>
+                  </div>
+                )}
+              </div>
+            )}
+            {project.period && <p class="text-zinc-400 text-xs uppercase tracking-widest italic font-medium mb-3">{project.period}</p>}
+            <h3 class="text-2xl font-bold mb-3 group-hover:text-zinc-600 transition-colors">{project.title}</h3>
+            {project.role && <p class="text-sm font-semibold text-zinc-900 mb-4">{project.role}</p>}
+            <p class="text-zinc-500 mb-6 leading-relaxed">{project.summary}</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              {project.tags.map((tag) => (
+                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-zinc-100 rounded">{tag}</span>
+              ))}
+            </div>
+            {project.links && project.links.length > 0 && (
+              <div class="flex flex-wrap gap-3">
+                {project.links.map((link) => (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-3 py-1 text-[10px] font-bold uppercase tracking-tighter text-zinc-500 border border-zinc-200 rounded-full hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-all"
+                  >
+                    [{link.label}] <ExternalLink size={12} />
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

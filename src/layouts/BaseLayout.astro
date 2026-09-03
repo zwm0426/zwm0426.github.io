@@ -3,27 +3,54 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../index.css';
 import site from '../data/site.json';
+import siteZh from '../data/zh/site.json';
 import profile from '../data/profile.json';
+import profileZh from '../data/zh/profile.json';
 import navigation from '../data/navigation.json';
 import links from '../data/links.json';
+import { ui } from '../i18n/ui';
+import { documentLanguage, withLocalePath, type Locale } from '../i18n/routing';
 
 interface Props {
   title: string;
   description?: string;
+  locale: Locale;
 }
 
-const { title, description = site.siteDescription } = Astro.props;
+const { title, locale } = Astro.props;
+const localizedSite = locale === 'zh' ? siteZh : site;
+const localizedProfile = locale === 'zh' ? profileZh : profile;
+const copy = ui[locale];
+const description = Astro.props.description ?? localizedSite.siteDescription;
+const pathname = Astro.url.pathname;
+const localizedNavigation = navigation.map((item) => ({
+  ...item,
+  label: copy.navigation[item.href] ?? item.label,
+  href: withLocalePath(item.href, locale),
+}));
+const canonicalUrl = new URL(pathname, Astro.site ?? Astro.url.origin);
+const englishUrl = new URL(withLocalePath(pathname, 'en'), Astro.site ?? Astro.url.origin);
+const chineseUrl = new URL(withLocalePath(pathname, 'zh'), Astro.site ?? Astro.url.origin);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={documentLanguage[locale]}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | {site.siteShortTitle}</title>
+    <title>{title} | {localizedSite.siteShortTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={englishUrl} />
+    <link rel="alternate" hreflang="zh-CN" href={chineseUrl} />
+    <link rel="alternate" hreflang="x-default" href={new URL('/', Astro.site ?? Astro.url.origin)} />
+    <meta property="og:title" content={`${title} | ${localizedSite.siteShortTitle}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : 'en_US'} />
+    <meta property="og:locale:alternate" content={locale === 'zh' ? 'en_US' : 'zh_CN'} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,11 +65,28 @@ const { title, description = site.siteDescription } = Astro.props;
     )}
   </head>
   <body class="min-h-screen bg-white text-zinc-900 selection:bg-zinc-900 selection:text-white font-sans">
-    <Navbar client:load navigation={navigation} brand={profile.shortName} />
+    <Navbar
+      client:load
+      navigation={localizedNavigation}
+      brand={localizedProfile.shortName}
+      locale={locale}
+      currentPath={pathname}
+      switchLabel={copy.switchLabel}
+      switchAriaLabel={copy.switchAriaLabel}
+      openMenuAriaLabel={copy.openMenuAriaLabel}
+      closeMenuAriaLabel={copy.closeMenuAriaLabel}
+    />
     <main>
       <slot />
     </main>
-    <Footer client:load site={site} links={links} />
+    <Footer
+      client:load
+      site={localizedSite}
+      links={links}
+      locale={locale}
+      emailAriaLabel={copy.emailAriaLabel}
+      publicationsAriaLabel={copy.publications.title}
+    />
   </body>
 </html>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ChevronRight } from 'lucide-react';
+import { withLocalePath, type Locale } from '../i18n/routing';
 
 type Profile = {
   name: string;
@@ -31,6 +32,7 @@ type Links = {
 type HeroProps = {
   profile: Profile;
   links?: Links;
+  locale: Locale;
 };
 
 const defaultHeroLinks: HeroAction[] = [
@@ -38,10 +40,10 @@ const defaultHeroLinks: HeroAction[] = [
   { label: 'Visit EC-ZERO Lab', hrefKey: 'lab', variant: 'secondary', external: true },
 ];
 
-const Hero = ({ profile, links }: HeroProps) => {
+const Hero = ({ profile, links, locale }: HeroProps) => {
   const heroLinks = links?.hero?.length ? links.hero : defaultHeroLinks;
   const resolveHref = (action: HeroAction) => {
-    if (action.href) return action.href;
+    if (action.href) return withLocalePath(action.href, locale);
     if (action.hrefKey === 'lab') return links?.lab ?? '#';
     return '#';
   };

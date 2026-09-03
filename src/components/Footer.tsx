@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, BookOpen, type LucideIcon } from 'lucide-react';
+import { withLocalePath, type Locale } from '../i18n/routing';
 
 type Site = {
   copyright: string;
@@ -25,16 +26,19 @@ type Links = {
 type FooterProps = {
   site: Site;
   links?: Links;
+  locale: Locale;
+  emailAriaLabel: string;
+  publicationsAriaLabel: string;
 };
 
-const Footer = ({ site, links }: FooterProps) => {
+const Footer = ({ site, links, locale, emailAriaLabel, publicationsAriaLabel }: FooterProps) => {
   const socialLinks: IconLink[] = [
     links?.github ? { label: 'GitHub', href: links.github, Icon: Github } : undefined,
     links?.linkedin ? { label: 'LinkedIn', href: links.linkedin, Icon: Linkedin } : undefined,
   ].filter((link): link is IconLink => Boolean(link));
 
   const publicationLink = links?.publications
-    ? { label: 'Publications', href: links.publications, Icon: BookOpen }
+    ? { label: publicationsAriaLabel, href: withLocalePath(links.publications, locale), Icon: BookOpen }
     : undefined;
 
   const handleEmailClick = () => {
@@ -72,7 +76,7 @@ const Footer = ({ site, links }: FooterProps) => {
             <button
               type="button"
               onClick={handleEmailClick}
-              aria-label="Email"
+              aria-label={emailAriaLabel}
               className="text-zinc-400 hover:text-zinc-900 transition-colors"
             >
               <Mail size={20} />

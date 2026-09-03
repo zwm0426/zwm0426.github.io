@@ -1,0 +1,119 @@
+{
+  "title": "个人简历",
+  "subtitle": "跨学科研究者与工程师，工作方向涵盖 AI4Science、智能实验室系统、扩展现实、计算机视觉与以人为本计算。",
+  "sections": [
+    {
+      "title": "工作经历",
+      "entries": [
+        {
+          "title": "首席人工智能架构师",
+          "organization": "上海交通大学未来技术学院 EC-ZERO 实验室",
+          "period": "2026.06 – 至今",
+          "items": [
+            {
+              "label": "AI4Science 架构",
+              "description": "面向电化学系统、智能电解与绿色能源研究，设计人工智能辅助的科研工作流。"
+            },
+            {
+              "label": "科研工具链",
+              "description": "为科研协作与实验室运营构建数据、模型和知识管理工作流。"
+            },
+            {
+              "label": "智能实验室系统",
+              "description": "负责 LabOS 概念、实验流程支持、资产追踪与人工智能科研基础设施建设。"
+            }
+          ]
+        },
+        {
+          "title": "工程师／XR 实验室主任",
+          "organization": "上海交通大学学生创新中心",
+          "period": "2019.06 – 2025.04",
+          "items": [
+            {
+              "label": "课程设计",
+              "description": "联合负责上海交通大学 AIGC 课程，并开发生成式人工智能、XR、Python、计算机视觉与工程实践模块。"
+            },
+            {
+              "label": "实验室管理",
+              "description": "负责 XR 实验室运行，以及设备采购、原型开发流程和学生创新培养。"
+            },
+            {
+              "label": "学生指导",
+              "description": "在课程、创新项目和全国性竞赛中指导 50 余支学生团队，支持多个跨学科项目获奖。"
+            }
+          ]
+        },
+        {
+          "title": "研究助理",
+          "organization": "南洋理工大学能源研究院（ERI@N）",
+          "period": "2017.11 – 2018.06",
+          "items": [
+            {
+              "label": "三维可视化",
+              "description": "参与大规模三维城市与激光雷达数据可视化系统研发。"
+            },
+            {
+              "label": "系统设计",
+              "description": "为能源研究与数据驱动的可视分析项目设计和实现交互界面。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "教育经历",
+      "entries": [
+        {
+          "title": "南洋理工大学（NTU）",
+          "detail": "数字媒体技术理学硕士",
+          "location": "新加坡",
+          "period": "2017"
+        },
+        {
+          "title": "西北大学",
+          "detail": "计算机科学与技术工学学士",
+          "location": "中国西安",
+          "period": "2016"
+        }
+      ]
+    },
+    {
+      "title": "荣誉与奖项",
+      "items": [
+        {
+          "label": "华为云与计算先锋教师",
+          "description": "2021"
+        },
+        {
+          "label": "优秀员工奖",
+          "description": "上海交通大学，2020"
+        },
+        {
+          "label": "全国特等奖",
+          "description": "高校混合式教学设计创新大赛，2020"
+        }
+      ]
+    },
+    {
+      "title": "技术能力",
+      "items": [
+        {
+          "label": "人工智能与科研计算",
+          "description": "Python、PyTorch、大语言模型工作流、计算机视觉、多模态数据处理。"
+        },
+        {
+          "label": "交互系统",
+          "description": "Unity、XR/AR 原型开发、空间计算、人机交互系统。"
+        },
+        {
+          "label": "工程工具",
+          "description": "MATLAB、NI LabVIEW、Raspberry Pi、三维激光雷达可视化。"
+        },
+        {
+          "label": "语言",
+          "description": "中文、英语，以及日语、韩语、德语、法语和俄语基础。"
+        }
+      ]
+    }
+  ]
+}
