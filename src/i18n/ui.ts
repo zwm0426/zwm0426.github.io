@@ -119,7 +119,7 @@ export const ui: Record<Locale, UiCopy> = {
     emailAriaLabel: '发送邮件',
     navigation: {
       '/': '首页',
-      '/#about': '关于',
+      '/#about': '关于我',
       '/news': '动态',
       '/projects': '项目',
       '/teaching': '教学',
@@ -159,7 +159,7 @@ export const ui: Record<Locale, UiCopy> = {
     },
     heroActions: {
       cv: '查看简历',
-      lab: '访问 EC-ZERO 实验室',
+      lab: '了解 EC-ZERO 实验室',
     },
   },
 };
