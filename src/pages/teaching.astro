@@ -10,8 +10,8 @@ type Course = {
   institution?: string;
   role?: string;
   highlight?: {
-    badge: string;
-    style: BadgeStyle;
+    badge?: string;
+    style?: BadgeStyle;
     text: string;
   };
   description?: string;
@@ -122,7 +122,15 @@ const badgeClass = (style: BadgeStyle) =>
                   )}
                   {course.highlight && (
                     <li>
-                      <strong>Highlight:</strong> Rated <span class={badgeClass(course.highlight.style)}>{course.highlight.badge}</span> {course.highlight.text}
+                      <strong>Highlight:</strong>{' '}
+                      {course.highlight.badge ? (
+                        <>
+                          Rated <span class={badgeClass(course.highlight.style ?? 'light')}>{course.highlight.badge}</span>{' '}
+                          {course.highlight.text}
+                        </>
+                      ) : (
+                        course.highlight.text
+                      )}
                     </li>
                   )}
                   {course.description && (
